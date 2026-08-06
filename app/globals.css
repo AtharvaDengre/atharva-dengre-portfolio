@@ -1078,29 +1078,34 @@ html, body, main {
     backdrop-filter: blur(8px) !important;
   }
 
-  /* Compact floating corner badges for mobile screens */
+  /* Floating corner badges for mobile screens - keep small and outside card content */
   .badge-top-right, .badge-bottom-left {
     position: absolute !important;
-    padding: 6px 10px !important;
-    border-radius: 10px !important;
-    backdrop-filter: blur(12px) !important;
+    width: max-content !important;
+    max-width: 88vw !important;
+    padding: 5px 9px !important;
+    border-radius: 8px !important;
+    backdrop-filter: blur(16px) !important;
+    z-index: 40 !important;
   }
   .badge-top-right {
-    top: -14px !important;
-    right: -2px !important;
+    top: -24px !important;
+    right: 6px !important;
   }
   .badge-bottom-left {
-    bottom: -14px !important;
-    left: -2px !important;
+    bottom: -24px !important;
+    left: 6px !important;
   }
   .badge-top-right .badge-title, .badge-bottom-left .badge-title {
-    font-size: 11px !important;
+    font-size: 10.5px !important;
+    line-height: 1.2 !important;
   }
   .badge-top-right .badge-sub, .badge-bottom-left .badge-sub {
-    font-size: 8.5px !important;
+    font-size: 8px !important;
+    line-height: 1.2 !important;
   }
   .badge-top-right .badge-icon, .badge-bottom-left .badge-icon {
-    font-size: 14px !important;
+    font-size: 12px !important;
   }
 
   .mega-title {
