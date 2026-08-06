@@ -224,25 +224,34 @@ export default function Hero() {
                 {/* Live Enterprise Metrics Panel */}
                 <div className="command-metrics-list flex flex-col gap-3.5 mb-5">
                   <div className="command-metric-row bg-[rgba(255,255,255,0.03)] border border-border-glass rounded-lg p-3">
-                    <div className="metric-info flex justify-between items-center w-full font-mono text-[10.5px] mb-1.5">
-                      <span className="metric-name text-text-main flex items-center gap-1.5 shrink-0"><i className="fa-solid fa-server text-accent-red" /> S2P / P2P S/4HANA Operations</span>
-                      <span className="metric-val text-accent-green font-bold whitespace-nowrap ml-2 shrink-0">ONLINE (99.8% SLA)</span>
+                    <div className="metric-info flex justify-between items-center w-full font-mono text-[10.5px] mb-1.5 gap-2 overflow-hidden">
+                      <span className="metric-name text-text-main flex items-center gap-1.5 min-w-0 truncate">
+                        <i className="fa-solid fa-server text-accent-red shrink-0" />
+                        <span className="truncate">S2P / P2P S/4HANA Operations</span>
+                      </span>
+                      <span className="metric-val text-accent-green font-bold whitespace-nowrap shrink-0 ml-auto">ONLINE (99.8% SLA)</span>
                     </div>
                     <div className="metric-progress h-1 bg-[rgba(255,255,255,0.08)] rounded overflow-hidden"><div className="metric-fill fill-green h-full bg-accent-green rounded" style={{ width: '99.8%' }}></div></div>
                   </div>
 
                   <div className="command-metric-row bg-[rgba(255,255,255,0.03)] border border-border-glass rounded-lg p-3">
-                    <div className="metric-info flex justify-between items-center w-full font-mono text-[10.5px] mb-1.5">
-                      <span className="metric-name text-text-main flex items-center gap-1.5 shrink-0"><i className="fa-solid fa-sitemap text-accent-purple" /> MDG Master Data Lifecycle</span>
-                      <span className="metric-val text-accent-purple font-bold whitespace-nowrap ml-2 shrink-0">ACTIVE (50K+ Txns)</span>
+                    <div className="metric-info flex justify-between items-center w-full font-mono text-[10.5px] mb-1.5 gap-2 overflow-hidden">
+                      <span className="metric-name text-text-main flex items-center gap-1.5 min-w-0 truncate">
+                        <i className="fa-solid fa-sitemap text-accent-purple shrink-0" />
+                        <span className="truncate">MDG Master Data Lifecycle</span>
+                      </span>
+                      <span className="metric-val text-accent-purple font-bold whitespace-nowrap shrink-0 ml-auto">ACTIVE (50K+ Txns)</span>
                     </div>
                     <div className="metric-progress h-1 bg-[rgba(255,255,255,0.08)] rounded overflow-hidden"><div className="metric-fill fill-purple h-full bg-accent-purple rounded" style={{ width: '95%' }}></div></div>
                   </div>
 
                   <div className="command-metric-row bg-[rgba(255,255,255,0.03)] border border-border-glass rounded-lg p-3">
-                    <div className="metric-info flex justify-between items-center w-full font-mono text-[10.5px] mb-1.5">
-                      <span className="metric-name text-text-main flex items-center gap-1.5 shrink-0"><i className="fa-solid fa-diagram-project text-accent-amber" /> Ariba CIG &amp; Z-IDOC Middleware</span>
-                      <span className="metric-val text-accent-amber font-bold whitespace-nowrap ml-2 shrink-0">STABLE (ZARB/ZICP/ZWPO)</span>
+                    <div className="metric-info flex justify-between items-center w-full font-mono text-[10.5px] mb-1.5 gap-2 overflow-hidden">
+                      <span className="metric-name text-text-main flex items-center gap-1.5 min-w-0 truncate">
+                        <i className="fa-solid fa-diagram-project text-accent-amber shrink-0" />
+                        <span className="truncate">Ariba CIG &amp; Z-IDOC Middleware</span>
+                      </span>
+                      <span className="metric-val text-accent-amber font-bold whitespace-nowrap shrink-0 ml-auto">STABLE (ZARB/ZICP)</span>
                     </div>
                     <div className="metric-progress h-1 bg-[rgba(255,255,255,0.08)] rounded overflow-hidden"><div className="metric-fill fill-amber h-full bg-accent-amber rounded" style={{ width: '92%' }}></div></div>
                   </div>
