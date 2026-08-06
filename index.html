@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atharva Dengre — SAP S/4HANA MM Consultant | S2P & P2P | MDG & Agentic AI Specialist</title>
+  <meta name="description" content="Portfolio of Atharva Dengre - SAP S/4HANA MM Consultant at IBM with 2.8+ years experience in Source-to-Pay (S2P), Procure-to-Pay (P2P), Master Data Governance (MDG), SAP Activate, WRICEF, and Agentic AI solutions for SAP.">
+  <meta name="keywords" content="Atharva Dengre, SAP S/4HANA, SAP MM, S2P, P2P, SAP MDG, WRICEF, LSMW, Migration Cockpit, Ariba CIG, IBM Consultant, Agentic AI, SAP GenAI Hub, watsonx, SAP Joule, US Remote-Ready">
+  
+  <!-- OpenGraph / Social Meta Tags -->
+  <meta property="og:title" content="Atharva Dengre — SAP S/4HANA MM & AI Consultant">
+  <meta property="og:description" content="SAP MM & MDG Consultant at IBM delivering Source-to-Pay (S2P) & Procure-to-Pay (P2P) operations at 99.8% SLA across 50,000+ monthly transactions.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Glowing Background Blobs -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Interactive Background Canvas -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- Notification Toast Container -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <!-- STICKY GLASS NAVIGATION -->
+  <nav id="mainNav">
+    <div class="nav-wrap">
+      <a href="#" class="logo-brand">
+        <span class="logo-dot"></span>
+        <span class="logo-text">ATHARVA<span class="highlight">DENGRE</span></span>
+      </a>
+
+      <div class="nav-menu" id="navMenu">
+        <a href="#about" class="nav-link"><i class="fa-solid fa-user-astronaut nav-icon"></i> About</a>
+        <a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase nav-icon"></i> Experience</a>
+        <a href="#activate" class="nav-link"><i class="fa-solid fa-layer-group nav-icon"></i> Methodology</a>
+        <a href="#sap-ai" class="nav-link"><i class="fa-solid fa-brain nav-icon"></i> SAP × AI</a>
+        <a href="#certifications" class="nav-link"><i class="fa-solid fa-certificate nav-icon"></i> Certs</a>
+        <a href="#skills" class="nav-link"><i class="fa-solid fa-sliders nav-icon"></i> Skills</a>
+        <a href="#projects" class="nav-link"><i class="fa-solid fa-cubes nav-icon"></i> Projects</a>
+        <a href="#contact" class="nav-link nav-cta-mobile"><i class="fa-solid fa-paper-plane"></i> Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="#simulator" class="btn-glass btn-sm btn-pulse">
+          <i class="fa-solid fa-microchip red-icon"></i> Live AI Simulator
+        </a>
+        <button id="mobileNavToggle" class="mobile-toggle" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="hero-section" id="hero">
+    <div class="hero-container">
+      <div class="hero-grid">
+        
+        <!-- Hero Text Content -->
+        <div class="hero-content">
+          <div class="status-badge-group">
+            <div class="status-badge glow-border">
+              <span class="pulse-dot"></span>
+              <span class="status-text">Open to relocation — Dubai · Singapore · Malaysia</span>
+            </div>
+            <div class="status-subline-dim"><i class="fa-solid fa-compass amber-icon"></i> Also exploring: EU roles · Remote (EMEA / APAC time zones)</div>
+          </div>
+
+          <h1 class="mega-title">
+            <span class="title-outline">ATHARVA</span>
+            <span class="title-fill">DEN<span class="accent-red">GRE</span></span>
+          </h1>
+
+          <div class="role-subtitle">
+            SAP S/4HANA MM &amp; MDG Consultant | S2P &amp; P2P Operations | SAP GenAI &amp; Agentic ERP Automations
+          </div>
+
+          <div class="typing-container">
+            <span class="typing-prefix">> </span>
+            <span id="typingText" class="typing-text"></span>
+            <span class="cursor-caret"></span>
+          </div>
+
+          <p class="hero-description">
+            Delivering <strong>Source-to-Pay (S2P)</strong> and <strong>Procure-to-Pay (P2P)</strong> operations &amp; master data governance at 
+            <strong class="highlight-val">99.8% SLA</strong> across <strong class="highlight-val">50,000+ monthly transactions</strong> 
+            for a global Petrochemicals enterprise at IBM — while building multi-agent AI systems natively on SAP S/4HANA.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#sap-ai" class="btn-primary-glass">
+              <span>Explore SAP × AI Work</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#simulator" class="btn-secondary-glass">
+              <i class="fa-solid fa-terminal"></i>
+              <span>Test AI Agent Demo</span>
+            </a>
+            <button id="copyEmailBtn" class="btn-icon-glass" title="Copy Email (atharvadengre@gmail.com)">
+              <i class="fa-regular fa-copy"></i>
+            </button>
+            <a href="https://www.linkedin.com/in/atharva-dengre" target="_blank" rel="noopener" class="btn-icon-glass" title="LinkedIn Profile">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/AtharvaDengre" target="_blank" rel="noopener" class="btn-icon-glass" title="GitHub Repositories">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+
+          <!-- Stat Glass Cards Grid -->
+          <div class="stat-glass-grid">
+            <div class="stat-glass-card">
+              <div class="stat-value" data-count="2.8" data-suffix="+">0</div>
+              <div class="stat-label">Years IBM AMS</div>
+              <div class="stat-sub">Gold-Tier Account</div>
+            </div>
+            <div class="stat-glass-card">
+              <div class="stat-value" data-count="99.8" data-suffix="%">0</div>
+              <div class="stat-label">SLA Track Record</div>
+              <div class="stat-sub">S2P &amp; P2P Delivery</div>
+            </div>
+            <div class="stat-glass-card">
+              <div class="stat-value" data-count="50" data-suffix="K+">0</div>
+              <div class="stat-label">Monthly Txns</div>
+              <div class="stat-sub">Vendor &amp; PO Data</div>
+            </div>
+            <div class="stat-glass-card">
+              <div class="stat-value" data-count="3" data-suffix="x">0</div>
+              <div class="stat-label">SAP Certified</div>
+              <div class="stat-sub">MM, MDG &amp; GenAI</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Live SAP x AI System Command Center -->
+        <div class="hero-visual">
+          <div class="glass-command-wrapper tilt-card" id="avatarCard">
+            <div class="command-glow-ring"></div>
+            
+            <!-- Non-Overlapping Top Floating Badge -->
+            <div class="glass-badge badge-top-right float-anim-1">
+              <i class="fa-solid fa-globe badge-icon"></i>
+              <div>
+                <div class="badge-title">Relocation-Ready</div>
+                <div class="badge-sub">Dubai · Singapore · Malaysia · EU</div>
+              </div>
+            </div>
+
+            <div class="glass-command-card">
+              <!-- Header Bar -->
+              <div class="command-card-header">
+                <div class="command-card-title">
+                  <span class="pulse-dot-green"></span>
+                  <span>SYSTEM_TELEMETRY // ATHARVA.DENGRE</span>
+                </div>
+                <div class="command-card-tag">S2P &amp; P2P ENGINE</div>
+              </div>
+
+              <!-- Monogram Core Visual -->
+              <div class="monogram-container">
+                <div class="monogram-ring-outer"></div>
+                <div class="monogram-ring-inner"></div>
+                <div class="monogram-badge">
+                  <span class="monogram-text">AD</span>
+                  <span class="monogram-sub">S2P · P2P · AI</span>
+                </div>
+              </div>
+
+              <!-- Live Enterprise Metrics Panel -->
+              <div class="command-metrics-list">
+                <div class="command-metric-row">
+                  <div class="metric-info">
+                    <span class="metric-name"><i class="fa-solid fa-server red-icon"></i> S2P / P2P S/4HANA Operations</span>
+                    <span class="metric-val text-green">ONLINE (99.8% SLA)</span>
+                  </div>
+                  <div class="metric-progress"><div class="metric-fill fill-green" style="width: 99.8%;"></div></div>
+                </div>
+
+                <div class="command-metric-row">
+                  <div class="metric-info">
+                    <span class="metric-name"><i class="fa-solid fa-sitemap purple-icon"></i> MDG Master Data Lifecycle</span>
+                    <span class="metric-val text-purple">ACTIVE (50K+ Txns)</span>
+                  </div>
+                  <div class="metric-progress"><div class="metric-fill fill-purple" style="width: 95%;"></div></div>
+                </div>
+
+                <div class="command-metric-row">
+                  <div class="metric-info">
+                    <span class="metric-name"><i class="fa-solid fa-diagram-project amber-icon"></i> Ariba CIG &amp; Z-IDOC Middleware</span>
+                    <span class="metric-val text-amber">STABLE (ZARB/ZICP/ZWPO)</span>
+                  </div>
+                  <div class="metric-progress"><div class="metric-fill fill-amber" style="width: 92%;"></div></div>
+                </div>
+              </div>
+
+              <!-- Card Action Bar -->
+              <div class="command-card-footer">
+                <div class="footer-badge"><i class="fa-solid fa-certificate"></i> 3x SAP Certified</div>
+                <div class="footer-badge"><i class="fa-solid fa-shield-halved"></i> IBM Gold-Tier</div>
+              </div>
+            </div>
+
+            <!-- Non-Overlapping Bottom Floating Badge -->
+            <div class="glass-badge badge-bottom-left float-anim-2">
+              <i class="fa-solid fa-microchip badge-icon alt"></i>
+              <div>
+                <div class="badge-title">SAP Joule &amp; watsonx</div>
+                <div class="badge-sub">Assist-to-Human AI Triage</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- SECTION 01: ABOUT ME -->
+  <section id="about" class="section-glass">
+    <div class="section-wrap">
+      <div class="section-header reveal">
+        <span class="section-number">01</span>
+        <h2 class="section-title">ABOUT ME</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-bio glass-panel reveal">
+          <h3 class="panel-heading"><i class="fa-solid fa-user-gear icon-accent"></i> S2P / P2P Enterprise Delivery Meets Agentic AI</h3>
+          <p>
+            I'm a <strong>SAP S/4HANA MM Consultant &amp; Master Data Specialist at IBM</strong> with 2.8+ years of hands-on experience delivering end-to-end <strong>Source-to-Pay (S2P)</strong> and <strong>Procure-to-Pay (P2P)</strong> operations, Master Data Management (MDM), and cross-system integration for a global Petrochemicals enterprise — an IBM gold-tier account.
+          </p>
+          <p>
+            Day to day, I own Purchase Requisition review, Purchase Order processing (ME21N/ME22N/ME23N), Goods Receipt (MIGO), Invoice Verification (MIRO), 3-way match exception handling, vendor/customer/employee/intercompany master data lifecycles, IDOC monitoring &amp; reprocessing (including custom Z-IDOCs: ZARB, ZICP, ZWPO), MDG Fiori workflow modifications, and SAP Activate conversion wave execution with post-go-live hypercare.
+          </p>
+          <p>
+            I hold <strong>3x SAP Certified Associate credentials</strong>: <em>SAP S/4HANA Sourcing &amp; Procurement</em>, <em>SAP Master Data Governance on S/4HANA</em>, and <em>SAP Generative AI Developer</em>. I bridge core enterprise SAP operations with cutting-edge AI architecture.
+          </p>
+          <p>
+            On the AI side, I work hands-on with <strong>SAP Joule</strong>, <strong>SAP GenAI Hub</strong>, <strong>SAP AI Launchpad</strong>, and <strong>IBM watsonx</strong>. I designed and presented a multi-agent AI incident resolution framework for SAP AMS to IBM leadership — an assist-to-human architecture spanning intake, clarification, diagnosis, resolution, and routing over domain knowledge bases.
+          </p>
+
+          <div class="toolbelt-container">
+            <h4 class="toolbelt-heading">Core Enterprise, Integration &amp; AI Stack</h4>
+            <div class="chip-cloud">
+              <span class="tech-chip"><i class="fa-solid fa-cart-flatbed"></i> Source-to-Pay (S2P)</span>
+              <span class="tech-chip"><i class="fa-solid fa-receipt"></i> Procure-to-Pay (P2P)</span>
+              <span class="tech-chip"><i class="fa-solid fa-database"></i> SAP S/4HANA MM</span>
+              <span class="tech-chip"><i class="fa-solid fa-sitemap"></i> SAP MDG on S/4HANA</span>
+              <span class="tech-chip"><i class="fa-solid fa-boxes-packing"></i> Material Master</span>
+              <span class="tech-chip"><i class="fa-solid fa-id-card"></i> Business Partner (Vendor/Customer/Employee)</span>
+              <span class="tech-chip"><i class="fa-solid fa-code-branch"></i> BRFplus Routing</span>
+              <span class="tech-chip"><i class="fa-solid fa-plug"></i> SAP Ariba CIG &amp; WMS</span>
+              <span class="tech-chip"><i class="fa-solid fa-file-export"></i> LSMW / Migration Cockpit / Winshuttle</span>
+              <span class="tech-chip"><i class="fa-solid fa-cube"></i> WRICEF Objects (W, R, I, C, E, F)</span>
+              <span class="tech-chip"><i class="fa-solid fa-network-wired"></i> Z-IDOCs (ZARB, ZICP, ZWPO)</span>
+              <span class="tech-chip"><i class="fa-solid fa-headset"></i> ServiceNow ITSM</span>
+              <span class="tech-chip"><i class="fa-solid fa-chart-pie"></i> Power BI / SQL on HANA</span>
+              <span class="tech-chip highlight-chip"><i class="fa-solid fa-bolt"></i> SAP Joule</span>
+              <span class="tech-chip highlight-chip"><i class="fa-solid fa-robot"></i> SAP GenAI Hub</span>
+              <span class="tech-chip highlight-chip"><i class="fa-solid fa-microchip"></i> SAP AI Launchpad</span>
+              <span class="tech-chip highlight-chip"><i class="fa-solid fa-brain"></i> IBM watsonx RAG</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Focus Glass Panel -->
+        <div class="focus-panel glass-panel reveal">
+          <h3 class="panel-heading"><i class="fa-solid fa-crosshairs icon-accent"></i> Core Competencies &amp; Education</h3>
+          
+          <!-- Education Sub-card -->
+          <div class="education-subcard glass-card-sub margin-bottom-20">
+            <div class="edu-header">
+              <i class="fa-solid fa-graduation-cap edu-icon"></i>
+              <div>
+                <h4 class="edu-title">B.E. — Computer Science &amp; Engineering</h4>
+                <div class="edu-sub">Prof. Ram Meghe Institute of Tech &amp; Research · CGPA: 8.3 / 10</div>
+              </div>
+            </div>
+          </div>
+
+          <ul class="focus-list">
+            <li class="focus-item">
+              <span class="focus-bullet"><i class="fa-solid fa-caret-right"></i></span>
+              <div>
+                <strong>S2P &amp; P2P End-to-End Governance</strong>
+                <p>Purchasing requisitions, ME21N/ME22N PO processing, MIGO goods receipts, MIRO 3-way match, source lists, info records, and pricing procedures.</p>
+              </div>
+            </li>
+            <li class="focus-item">
+              <span class="focus-bullet"><i class="fa-solid fa-caret-right"></i></span>
+              <div>
+                <strong>MDG Architecture &amp; Mass Conversion Waves</strong>
+                <p>Configuring MDG Fiori workflows, BRFplus approval routing, intercompany linkages, and wave migration via LSMW, Migration Cockpit, and Winshuttle Studio.</p>
+              </div>
+            </li>
+            <li class="focus-item">
+              <span class="focus-bullet"><i class="fa-solid fa-caret-right"></i></span>
+              <div>
+                <strong>Cross-System Integration &amp; WRICEF Support</strong>
+                <p>Ariba CIG, WMS, and logistics carrier interface troubleshooting. IDOC WE02/WE05/WE19/BD87 reprocessing for custom Z-IDOCs (ZARB, ZICP, ZWPO).</p>
+              </div>
+            </li>
+            <li class="focus-item">
+              <span class="focus-bullet"><i class="fa-solid fa-caret-right"></i></span>
+              <div>
+                <strong>Multi-Agent AI &amp; Intelligent Workflow Automation</strong>
+                <p>Building assist-to-human AI agent workflows for SAP incident triage, watsonx RAG knowledge bases, and SAP Joule / BTP GenAI Hub integrations.</p>
+              </div>
+            </li>
+            <li class="focus-item">
+              <span class="focus-bullet"><i class="fa-solid fa-caret-right"></i></span>
+              <div>
+                <strong>Global Mobility &amp; Remote Work</strong>
+                <p>US Remote-Ready, willing to travel, and actively pursuing roles in Dubai, Europe, US, and global remote opportunities.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 02: EXPERIENCE -->
+  <section id="experience" class="section-glass">
+    <div class="section-wrap">
+      <div class="section-header reveal">
+        <span class="section-number">02</span>
+        <h2 class="section-title">PROFESSIONAL EXPERIENCE</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="timeline-container">
+        <div class="timeline-flow-line"></div>
+
+        <div class="timeline-node glass-panel reveal">
+          <div class="node-header">
+            <div class="node-title-group">
+              <h3 class="node-role">Package Specialist — SAP (Delivery, Operations &amp; Data)</h3>
+              <span class="node-company">@ IBM India Pvt. Ltd.</span>
+            </div>
+            <div class="node-badge"><i class="fa-solid fa-crown red-icon"></i> Petrochemicals Account (IBM Gold-Tier)</div>
+          </div>
+
+          <div class="node-meta-row">
+            <span><i class="fa-regular fa-calendar"></i> Nov 2023 — Present · 2 yrs 10 mos (2.8+ Yrs Total SAP Exp)</span>
+            <span><i class="fa-solid fa-location-dot"></i> Pune, India (Hybrid / US Remote-Ready)</span>
+            <span><i class="fa-solid fa-chart-line"></i> 50K+ Monthly Txns · 99.8% SLA</span>
+          </div>
+
+          <div class="node-description">
+            <p>
+              Acting as informal SME within the AMS engagement — supporting a sub-team of 3 on MM and MDG ticket triage, escalation handling, knowledge transfer, and onboarding. Resolving complex enterprise SAP incidents via ServiceNow with structured RCA and preventive operational controls.
+            </p>
+          </div>
+
+          <!-- 4 Pillars Grid -->
+          <div class="capability-grid">
+            <div class="cap-card glass-card-sub">
+              <div class="cap-header">
+                <i class="fa-solid fa-cart-shopping cap-icon"></i>
+                <span>S2P &amp; P2P Operations</span>
+              </div>
+              <p class="cap-text">
+                Reviewed Purchase Requisitions &amp; processed Purchase Orders (ME21N/ME22N/ME23N) across direct/indirect categories. Resolved pricing, tax codes, payment terms, account assignments, price variances, release blocks, and 3-way match exceptions. Executed Goods Receipt (MIGO) &amp; Invoice Verification (MIRO).
+              </p>
+            </div>
+
+            <div class="cap-card glass-card-sub">
+              <div class="cap-header">
+                <i class="fa-solid fa-id-card cap-icon"></i>
+                <span>Master Data Governance &amp; Migration</span>
+              </div>
+              <p class="cap-text">
+                Owned end-to-end Vendor / Customer / Employee / Intercompany Business Partner &amp; Material Master lifecycle across company codes. Executed mass migration using LSMW, Migration Cockpit, and Winshuttle (Studio &amp; Transaction) with zero-defect rollback design. Modified MDG workflows on Fiori &amp; BRFplus routing.
+              </p>
+            </div>
+
+            <div class="cap-card glass-card-sub">
+              <div class="cap-header">
+                <i class="fa-solid fa-diagram-project cap-icon"></i>
+                <span>IDOC, Interface &amp; WRICEF Support</span>
+              </div>
+              <p class="cap-text">
+                Monitored and reprocessed standard IDOCs (ORDERS, ORDRSP, DESADV, INVOIC, CREMAS, DEBMAS) and custom Z-IDOCs (ZARB, ZICP, ZWPO) via WE02/WE05/WE19/BD87. Resolved SAP Ariba (CIG), third-party WMS linkage, and logistics carrier interface failures. Delivered WRICEF functional specs with ABAP developers for BAdI / user-exits.
+              </p>
+            </div>
+
+            <div class="cap-card glass-card-sub">
+              <div class="cap-header">
+                <i class="fa-solid fa-wand-magic-sparkles cap-icon"></i>
+                <span>Analytics, Intercompany &amp; Hypercare</span>
+              </div>
+              <p class="cap-text">
+                Setup Intercompany (IC) master data &amp; customer-vendor linkages enabling IC procurement &amp; billing flows. Executed SQL on SAP HANA for duplicate vendor detection. Built Power BI &amp; Excel dashboards tracking PO cycle time &amp; master data quality. Executed cutover tasks &amp; post-go-live hypercare stabilization.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 03: SAP ACTIVATE & ASAP METHODOLOGY -->
+  <section id="activate" class="section-glass">
+    <div class="section-wrap">
+      <div class="section-header reveal">
+        <span class="section-number">03</span>
+        <h2 class="section-title">SAP IMPLEMENTATION METHODOLOGY EXPOSURE</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="methodology-grid">
+        
+        <!-- SAP Activate Card -->
+        <div class="methodology-card glass-panel reveal">
+          <div class="meth-badge activate-badge"><i class="fa-solid fa-bolt"></i> SAP Activate Methodology (S/4HANA)</div>
+          <h3 class="meth-title">Realize · Deploy · Run Phase Exposure</h3>
+          
+          <div class="phase-list">
+            <div class="phase-item">
+              <span class="phase-tag">REALIZE PHASE</span>
+              <p>Mass data migration via LSMW, Migration Cockpit, and Winshuttle. Master data cleansing for manufacturing (Make-to-Order / Engineer-to-Order) and process industry domains. Z-IDOC resolution, WRICEF object support, and MM configuration validation.</p>
+            </div>
+
+            <div class="phase-item">
+              <span class="phase-tag">DEPLOY PHASE</span>
+              <p>Conversion wave execution, go-live readiness checks, data cutover validation, and interface stability verification across SAP Ariba (CIG), WMS, and logistics carriers.</p>
+            </div>
+
+            <div class="phase-item">
+              <span class="phase-tag">RUN PHASE</span>
+              <p>Hypercare stabilization, incident triage &amp; structured RCA, RFC fix deployment, performance monitoring, and smooth AMS steady-state transition.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ASAP Methodology Card -->
+        <div class="methodology-card glass-panel reveal">
+          <div class="meth-badge asap-badge"><i class="fa-solid fa-arrows-spin"></i> ASAP Methodology (ECC)</div>
+          <h3 class="meth-title">Go-Live &amp; Support Phase Exposure</h3>
+          
+          <div class="phase-list">
+            <div class="phase-item">
+              <span class="phase-tag">GO-LIVE &amp; SUPPORT</span>
+              <p>Production data migration support, system performance monitoring, hyper-care incident resolution, and structured handover to the AMS operational team.</p>
+            </div>
+
+            <div class="phase-item">
+              <span class="phase-tag">ASAP PHASES FAMILIARITY</span>
+              <p>Conceptual familiarity across full ASAP phases: Project Preparation, Business Blueprint, Realization, Final Preparation, and Go-Live &amp; Support.</p>
+            </div>
+
+            <div class="phase-item">
+              <span class="phase-tag">WRICEF FRAMEWORK</span>
+              <p>Hands-on WRICEF classification: Workflow (Fiori/MDG/BRFplus), Reports (Power BI/HANA SQL), Interfaces (Z-IDOC/RFC/Ariba CIG), Conversions (Migration Cockpit/LSMW/Winshuttle), Enhancements (BAdI/user-exits), Forms.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 04: SAP x AI ARCHITECTURE -->
+  <section id="sap-ai" class="section-glass highlight-section">
+    <div class="section-wrap">
+      <div class="section-header reveal">
+        <span class="section-number">04</span>
+        <h2 class="section-title">SAP × AI ARCHITECTURE &amp; INITIATIVES</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <p class="section-intro reveal">
+        Applying <strong>SAP Joule</strong>, <strong>SAP GenAI Hub</strong>, <strong>SAP AI Launchpad</strong>, and <strong>IBM watsonx</strong> to real-world enterprise AMS challenges — bridging core S2P &amp; P2P ERP workflows with agentic AI intelligence.
+      </p>
+
+      <!-- Multi-Agent Workflow Diagram -->
+      <div class="agent-workflow-card glass-panel reveal">
+        <div class="workflow-header">
+          <h3 class="panel-heading"><i class="fa-solid fa-network-wired icon-accent"></i> Multi-Agent Incident Triage Architecture</h3>
+          <span class="status-tag pulse-green"><i class="fa-solid fa-check"></i> Demonstrated to IBM Leadership</span>
+        </div>
+
+        <div class="agent-nodes-container">
+          
+          <div class="agent-step-node glass-card-sub">
+            <div class="step-num">01</div>
+            <div class="step-icon"><i class="fa-solid fa-inbox"></i></div>
+            <h4 class="step-title">Intake Agent</h4>
+            <p class="step-desc">Structured intake &amp; payload parsing of SAP AMS incidents from ServiceNow.</p>
+          </div>
+
+          <div class="agent-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+
+          <div class="agent-step-node glass-card-sub">
+            <div class="step-num">02</div>
+            <div class="step-icon"><i class="fa-solid fa-circle-question"></i></div>
+            <h4 class="step-title">Clarification</h4>
+            <p class="step-desc">Asks targeted follow-ups to gather missing context before triage starts.</p>
+          </div>
+
+          <div class="agent-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+
+          <div class="agent-step-node glass-card-sub">
+            <div class="step-num">03</div>
+            <div class="step-icon"><i class="fa-solid fa-stethoscope"></i></div>
+            <h4 class="step-title">Diagnosis</h4>
+            <p class="step-desc">Queries domain RAG knowledge base to isolate likely root cause.</p>
+          </div>
+
+          <div class="agent-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+
+          <div class="agent-step-node glass-card-sub">
+            <div class="step-num">04</div>
+            <div class="step-icon"><i class="fa-solid fa-lightbulb"></i></div>
+            <h4 class="step-title">Resolution</h4>
+            <p class="step-desc">Surfaces verified fix paths with assist-to-human recommendation.</p>
+          </div>
+
+          <div class="agent-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+
+          <div class="agent-step-node glass-card-sub">
+            <div class="step-num">05</div>
+            <div class="step-icon"><i class="fa-solid fa-route"></i></div>
+            <h4 class="step-title">Routing</h4>
+            <p class="step-desc">Routes ticket with complete diagnostic context attached.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- SAP x AI Pillars Grid -->
+      <div class="ai-pillars-grid">
+        <div class="ai-pillar-card glass-panel reveal">
+          <div class="pillar-tag">Philosophy</div>
+          <h3 class="pillar-title">Assist-to-Human by Design</h3>
+          <p class="pillar-desc">
+            The framework never auto-executes changes on production SAP. Every agent hands off to an expert consultant — maximizing speed while preserving strict auditability.
+          </p>
+        </div>
+
+        <div class="ai-pillar-card glass-panel reveal">
+          <div class="pillar-tag">Knowledge Retrieval</div>
+          <h3 class="pillar-title">watsonx RAG Knowledge Engine</h3>
+          <p class="pillar-desc">
+            Built a Retrieval-Augmented Generation chatbot on IBM watsonx for enterprise knowledge retrieval — grounding answers in validated MDG/MM standard operating procedures.
+          </p>
+        </div>
+
+        <div class="ai-pillar-card glass-panel reveal">
+          <div class="pillar-tag">SAP Native &amp; Joule</div>
+          <h3 class="pillar-title">SAP GenAI Hub &amp; SAP Joule</h3>
+          <p class="pillar-desc">
+            Hands-on with LLM orchestration natively inside SAP Business Technology Platform (BTP) — connecting model intelligence and SAP Joule directly with SAP S/4HANA tables.
+          </p>
+        </div>
+
+        <div class="ai-pillar-card glass-panel reveal">
+          <div class="pillar-tag">Governance &amp; RCA</div>
+          <h3 class="pillar-title">AI-Assisted RCA &amp; Governance</h3>
+          <p class="pillar-desc">
+            Standardizing RCA summaries for procurement and master data incidents using GenAI prompt frameworks — converting technical error findings into executive governance insights.
+          </p>
+        </div>
+      </div>
+
+      <!-- LIVE INTERACTIVE AGENT SIMULATOR -->
+      <div id="simulator" class="simulator-wrapper glass-panel reveal">
+        <div class="sim-header">
+          <div>
+            <span class="sim-badge"><i class="fa-solid fa-terminal"></i> Live Interactive Sandbox</span>
+            <h3 class="sim-title">Test the SAP AMS Multi-Agent Triage Simulator</h3>
+            <p class="sim-subtitle">Select an SAP incident scenario below to watch the Multi-Agent pipeline execute step-by-step in real time!</p>
+          </div>
+          <div class="sim-controls">
+            <label for="scenarioSelect" class="sim-label">Select Ticket Scenario:</label>
+            <select id="scenarioSelect" class="sim-select">
+              <option value="vendor_block">1. Vendor Master BP Release Block (MDG / ME21N)</option>
+              <option value="idoc_desadv">2. Custom Z-IDOC DESADV Quantity Mismatch Error (WE02 / ZWPO / Ariba)</option>
+              <option value="pricing_match">3. PO 3-Way Match Tax Pricing Discrepancy (ME22N / MIRO)</option>
+            </select>
+            <button id="runSimBtn" class="btn-primary-glass btn-sim-run">
+              <i class="fa-solid fa-play"></i> Run Simulation
+            </button>
+          </div>
+        </div>
+
+        <div class="sim-terminal glass-card-sub">
+          <div class="terminal-bar">
+            <div class="term-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="term-title">SAP_AMS_MultiAgent_Framework.log — Live Execution Engine</div>
+            <button id="clearTermBtn" class="btn-term-clear"><i class="fa-solid fa-trash-can"></i> Clear</button>
+          </div>
+
+          <div id="terminalBody" class="terminal-body">
+            <div class="term-line info">[SYSTEM] Engine initialized. Select a scenario above and click "Run Simulation".</div>
+            <div class="term-line hint">[HINT] Multi-Agent architecture: Intake -> Clarification -> RAG Diagnosis -> Resolution -> Routing.</div>
+          </div>
+
+          <div class="terminal-footer">
+            <div class="sim-progress-bar"><div id="simProgress" class="sim-progress-fill"></div></div>
+            <span id="simStatusText" class="sim-status">Status: Idle</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION 05: CERTIFICATIONS & TRAINING -->
+  <section id="certifications" class="section-glass">
+    <div class="section-wrap">
+      <div class="section-header reveal">
+        <span class="section-number">05</span>
+        <h2 class="section-title">CERTIFICATIONS &amp; FORMAL TRAINING</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="cert-filter-bar reveal">
+        <button class="cert-filter-btn active" data-filter="all">All Credentials &amp; Training (11)</button>
+        <button class="cert-filter-btn" data-filter="sap">SAP Certified (3)</button>
+        <button class="cert-filter-btn" data-filter="ibm">IBM Badges &amp; Challenges (4)</button>
+        <button class="cert-filter-btn" data-filter="redhat">Red Hat &amp; Cloud Training (4)</button>
+      </div>
+
+      <div class="cert-grid">
+        
+        <div class="cert-card glass-panel reveal" data-category="sap">
+          <div class="cert-issuer-badge sap-bg"><i class="fa-solid fa-gem"></i> SAP Certified</div>
+          <h3 class="cert-title">SAP Master Data Governance on SAP S/4HANA</h3>
+          <div class="cert-date"><i class="fa-regular fa-calendar-check"></i> Issued May 2026</div>
+          <div class="cert-footer"><span class="cert-tag">Enterprise MDG</span><span class="cert-tag">S/4HANA</span></div>
+        </div>
+
+        <div class="cert-card glass-panel reveal" data-category="sap">
+          <div class="cert-issuer-badge sap-bg"><i class="fa-solid fa-robot"></i> SAP Certified</div>
+          <h3 class="cert-title">SAP Certified — Generative AI Developer</h3>
+          <div class="cert-date"><i class="fa-regular fa-calendar-check"></i> Issued Apr 2026</div>
+          <div class="cert-footer"><span class="cert-tag">SAP GenAI Hub</span><span class="cert-tag">BTP / Joule</span></div>
+        </div>
+
+        <div class="cert-card glass-panel reveal" data-category="sap">
+          <div class="cert-issuer-badge sap-bg"><i class="fa-solid fa-cart-shopping"></i> SAP Certified</div>
+          <h3 class="cert-title">SAP Certified Associate — S/4HANA Sourcing &amp; Procurement</h3>
+          <div class="cert-date"><i class="fa-regular fa-calendar-check"></i> Issued Jun 2024 · Valid thru 2027</div>
+          <div class="cert-footer"><span class="cert-tag">SAP MM</span><span class="cert-tag">S2P &amp; P2P Procurement</span></div>
+        </div>
+
+        <!-- IBM Challenge Participant Correction -->
+        <div class="cert-card glass-panel reveal" data-category="ibm">
+          <div class="cert-issuer-badge ibm-bg"><i class="fa-solid fa-users"></i> IBM Challenge</div>
+          <h3 class="cert-title">IBMer watsonx Challenge AI Automation</h3>
+          <div class="cert-date"><i class="fa-regular fa-calendar-check"></i> 2025 &amp; 2026 Participant</div>
+          <div class="cert-footer"><span class="cert-tag">watsonx</span><span class="cert-tag">AI Automation Challenge</span></div>
+        </div>
+
+        <div class="cert-card glass-panel reveal" data-category="ibm">
+          <div class="cert-issuer-badge ibm-bg"><i class="fa-solid fa-brain"></i> IBM</div>
+          <h3 class="cert-title">Generative &amp; Agentic AI Foundation &amp; Advanced</h3>
+          <div class="cert-date"><i class="fa-regular fa-calendar-check"></i> Issued Nov 2025</div>
+          <div class="cert-footer"><span class="cert-tag">Agentic Systems</span><span class="cert-tag">LLMs</span></div>
+        </div>
+
+        <div class="cert-card glass-panel reveal" data-category="ibm">
+          <div class="cert-issuer-badge ibm-bg"><i class="fa-solid fa-user-tie"></i> IBM</div>
+          <h3 class="cert-title">Consulting Agentic AI Foundations</h3>
+          <div class="cert-date"><i class="fa-regular fa-calendar-check"></i> Issued Oct 2025</div>
+          <div class="cert-footer"><span class="cert-tag">AI Consulting</span><span class="cert-tag">Enterprise</span></div>
+        </div>
+
+        <div class="cert-card glass-panel reveal" data-category="ibm">
+          <div class="cert-issuer-badge ibm-bg"><i class="fa-solid fa-cloud"></i> IBM</div>
+          <h3 class="cert-title">Certified Professional Developer — Cloud v6</h3>
+          <div class="cert-date"><i class="fa-regular fa-calendar-check"></i> Issued Dec 2023</div>
+          <div class="cert-footer"><span class="cert-tag">IBM Cloud</span><span class="cert-tag">Architecture</span></div>
+        </div>
+
+        <!-- Red Hat Training 1 -->
+        <div class="cert-card glass-panel reveal" data-category="redhat">
+          <div class="cert-issuer-badge redhat-bg"><i class="fa-brands fa-redhat"></i> Red Hat Live Training</div>
+          <h3 class="cert-title">Red Hat Official Live Training — OpenShift Administration II (DO280 v4.14)</h3>
+          <div class="cert-date"><i class="fa-solid fa-chalkboard-user"></i> Red Hat Live Instructor-Led Course (Dec 2025)</div>
+          <div class="cert-footer"><span class="cert-tag">Red Hat Live Training</span><span class="cert-tag">OpenShift DO280</span></div>
+        </div>
+
+        <!-- Red Hat Training 2 -->
+        <div class="cert-card glass-panel reveal" data-category="redhat">
+          <div class="cert-issuer-badge redhat-bg"><i class="fa-brands fa-redhat"></i> Red Hat Live Training</div>
+          <h3 class="cert-title">Red Hat Official Live Training — OpenShift Developer I (DO188)</h3>
+          <div class="cert-date"><i class="fa-solid fa-chalkboard-user"></i> Red Hat Live Instructor-Led Course (Mar 2025)</div>
+          <div class="cert-footer"><span class="cert-tag">Red Hat Live Training</span><span class="cert-tag">Podman DO188</span></div>
+        </div>
+
+        <div class="cert-card glass-panel reveal" data-category="redhat">
+          <div class="cert-issuer-badge cloud-bg"><i class="fa-brands fa-aws"></i> AWS</div>
+          <h3 class="cert-title">AWS Academy Cloud Foundations</h3>
+          <div class="cert-date"><i class="fa-regular fa-calendar-check"></i> Issued 2024</div>
+          <div class="cert-footer"><span class="cert-tag">AWS Cloud</span><span class="cert-tag">Foundations</span></div>
+        </div>
+
+        <div class="cert-card glass-panel reveal" data-category="redhat">
+          <div class="cert-issuer-badge cisco-bg"><i class="fa-solid fa-network-wired"></i> Cisco &amp; Industry</div>
+          <h3 class="cert-title">CCNAv7 Networking &amp; Chemicals/Petroleum Bronze Solutions</h3>
+          <div class="cert-date"><i class="fa-regular fa-calendar-check"></i> Issued 2023 - 2024</div>
+          <div class="cert-footer"><span class="cert-tag">Cisco CCNA</span><span class="cert-tag">Petrochemicals Domain</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 06: SKILLS MATRIX -->
+  <section id="skills" class="section-glass">
+    <div class="section-wrap">
+      <div class="section-header reveal">
+        <span class="section-number">06</span>
+        <h2 class="section-title">SKILLS &amp; COMPETENCY MATRIX</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="skills-columns">
+        
+        <!-- Column 1: SAP Core & S2P/P2P -->
+        <div class="skill-category glass-panel reveal">
+          <h3 class="skill-cat-title"><i class="fa-solid fa-layer-group icon-accent"></i> SAP S/4HANA MM, S2P &amp; P2P</h3>
+          <div class="skill-bars-list">
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">SAP S/4HANA MM &amp; PO Processing (ME21N/22N/23N)</span>
+                <span class="skill-pct">96%</span>
+              </div>
+              <div class="meter-bar"><div class="meter-fill" data-width="96%"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Source-to-Pay (S2P) &amp; Procure-to-Pay (P2P)</span>
+                <span class="skill-pct">95%</span>
+              </div>
+              <div class="meter-bar"><div class="meter-fill" data-width="95%"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Goods Receipt (MIGO) &amp; MIRO 3-Way Match</span>
+                <span class="skill-pct">92%</span>
+              </div>
+              <div class="meter-bar"><div class="meter-fill" data-width="92%"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Release Strategies, Pricing &amp; Output Determination</span>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="meter-bar"><div class="meter-fill" data-width="90%"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">SAP Ariba CIG &amp; WMS / Logistics Integration</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="meter-bar"><div class="meter-fill" data-width="85%"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Intercompany Procurement &amp; Master Setup</span>
+                <span class="skill-pct">88%</span>
+              </div>
+              <div class="meter-bar"><div class="meter-fill" data-width="88%"></div></div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Column 2: Data & Integration -->
+        <div class="skill-category glass-panel reveal">
+          <h3 class="skill-cat-title"><i class="fa-solid fa-network-wired icon-accent"></i> Master Data, WRICEF &amp; IDOC</h3>
+          <div class="skill-bars-list">
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">SAP MDG (Material, Vendor, Customer, Employee)</span>
+                <span class="skill-pct">94%</span>
+              </div>
+              <div class="meter-bar"><div class="meter-fill" data-width="94%"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">LSMW, Migration Cockpit &amp; Winshuttle Studio</span>
+                <span class="skill-pct">92%</span>
+              </div>
+              <div class="meter-bar"><div class="meter-fill" data-width="92%"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">IDoc Reprocessing (Standard &amp; ZARB/ZICP/ZWPO)</span>
+                <span class="skill-pct">92%</span>
+              </div>
+              <div class="meter-bar"><div class="meter-fill" data-width="92%"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">WRICEF Object Support (ABAP BAdI / User-Exits)</span>
+                <span class="skill-pct">88%</span>
+              </div>
+              <div class="meter-bar"><div class="meter-fill" data-width="88%"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">BRFplus Routing &amp; Fiori Workflow</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="meter-bar"><div class="meter-fill" data-width="85%"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">SQL on SAP HANA &amp; Power BI Analytics</span>
+                <span class="skill-pct">84%</span>
+              </div>
+              <div class="meter-bar"><div class="meter-fill" data-width="84%"></div></div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Column 3: AI & Emerging -->
+        <div class="skill-category glass-panel reveal">
+          <h3 class="skill-cat-title"><i class="fa-solid fa-microchip icon-accent"></i> AI &amp; Agentic Systems</h3>
+          <div class="skill-bars-list">
+            
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">SAP Joule &amp; SAP GenAI Hub / Launchpad</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="meter-bar"><div class="meter-fill" data-width="85%"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">IBM watsonx &amp; RAG Systems</span>
+                <span class="skill-pct">88%</span>
+              </div>
+              <div class="meter-bar"><div class="meter-fill" data-width="88%"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Multi-Agent AI Triage Frameworks</span>
+                <span class="skill-pct">86%</span>
+              </div>
+              <div class="meter-bar"><div class="meter-fill" data-width="86%"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">AI-Assisted RCA &amp; Prompt Engineering</span>
+                <span class="skill-pct">88%</span>
+              </div>
+              <div class="meter-bar"><div class="meter-fill" data-width="88%"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">ServiceNow Incident Analytics &amp; ITIL</span>
+                <span class="skill-pct">92%</span>
+              </div>
+              <div class="meter-bar"><div class="meter-fill" data-width="92%"></div></div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Responsible AI &amp; Enterprise Governance</span>
+                <span class="skill-pct">82%</span>
+              </div>
+              <div class="meter-bar"><div class="meter-fill" data-width="82%"></div></div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 07: PROJECTS -->
+  <section id="projects" class="section-glass">
+    <div class="section-wrap">
+      <div class="section-header reveal">
+        <span class="section-number">07</span>
+        <h2 class="section-title">PROJECTS &amp; INITIATIVES</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="proj-grid">
+        
+        <!-- Featured Project 1 -->
+        <div class="proj-card glass-panel built-proj reveal">
+          <div class="proj-badge built"><i class="fa-solid fa-star"></i> Demonstrated to IBM Leadership</div>
+          <h3 class="proj-title">Multi-Agent AI Incident Resolution Framework (SAP AMS)</h3>
+          <p class="proj-description">
+            Assist-to-human architecture for SAP AMS spanning intake template, clarification/verification, diagnosis, resolution, and routing agents over a domain-tagged knowledge base. Reduced manual triage for recurring MM/MDG incidents.
+          </p>
+          <div class="proj-tags">
+            <span>Agentic AI</span><span>SAP AMS</span><span>ServiceNow</span><span>BRFplus</span><span>Lucidchart</span>
+          </div>
+        </div>
+
+        <!-- Featured Project 2 -->
+        <div class="proj-card glass-panel built-proj reveal">
+          <div class="proj-badge built"><i class="fa-solid fa-circle-check"></i> Deployed System</div>
+          <h3 class="proj-title">watsonx RAG Knowledge Chatbot</h3>
+          <p class="proj-description">
+            Retrieval-Augmented Generation chatbot built on IBM watsonx for enterprise SAP knowledge retrieval, grounding responses in validated MDG &amp; MM standard operating procedures to assist AMS consultants.
+          </p>
+          <div class="proj-tags">
+            <span>RAG Architecture</span><span>IBM watsonx</span><span>LLMs</span><span>Knowledge Base</span>
+          </div>
+        </div>
+
+        <!-- Featured Project 3 -->
+        <div class="proj-card glass-panel built-proj reveal">
+          <div class="proj-badge built"><i class="fa-solid fa-database"></i> Master Data Initiative</div>
+          <h3 class="proj-title">Master Data Cleansing &amp; Mass Migration Initiative</h3>
+          <p class="proj-description">
+            Led data validation and reconciliation cycles on SAP HANA to detect duplicate vendor and customer records, executing corrective mass updates via LSMW, Migration Cockpit, and Winshuttle Studio.
+          </p>
+          <div class="proj-tags">
+            <span>SAP HANA SQL</span><span>LSMW</span><span>Migration Cockpit</span><span>Winshuttle</span>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="proj-card glass-panel reveal">
+          <div class="proj-badge concept"><i class="fa-solid fa-flask"></i> AI RCA Initiative</div>
+          <h3 class="proj-title">AI-Assisted RCA &amp; Governance Reporting</h3>
+          <p class="proj-description">
+            Designed a GenAI prompt framework to standardize RCA summaries for procurement and master data incidents, converting technical error findings into executive-ready governance insights.
+          </p>
+          <div class="proj-tags">
+            <span>GenAI RCA</span><span>Governance</span><span>ServiceNow</span>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="proj-card glass-panel reveal">
+          <div class="proj-badge learning"><i class="fa-solid fa-laptop-code"></i> SAP AI Stack Hands-On</div>
+          <h3 class="proj-title">SAP AI Stack &amp; Joule Integration</h3>
+          <p class="proj-description">
+            Hands-on exploration of SAP GenAI Hub and SAP AI Launchpad on BTP for enterprise LLM consumption, prompt orchestration, and SAP Joule conversational AI integration.
+          </p>
+          <div class="proj-tags">
+            <span>SAP Joule</span><span>SAP BTP</span><span>GenAI Hub</span><span>AI Launchpad</span>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="proj-card glass-panel reveal">
+          <div class="proj-badge learning"><i class="fa-solid fa-lightbulb"></i> Case Study</div>
+          <h3 class="proj-title">Generative AI for Supply Chain &amp; S2P Optimization</h3>
+          <p class="proj-description">
+            Evaluation of how LLMs and SAP BTP services enhance supplier performance analysis, demand forecasting insights, and natural-language query interfaces for enterprise sourcing teams.
+          </p>
+          <div class="proj-tags">
+            <span>Generative AI</span><span>Supply Chain</span><span>S2P</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 08: CONTACT & CONNECT -->
+  <section id="contact" class="section-glass">
+    <div class="section-wrap">
+      <div class="section-header reveal">
+        <span class="section-number">08</span>
+        <h2 class="section-title">CONTACT &amp; CONNECT</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="contact-box glass-panel reveal">
+        <div class="contact-glow-overlay"></div>
+        <h3 class="contact-title">Let's talk SAP S/4HANA, S2P / P2P, MDG, or AI in the enterprise.</h3>
+        <p class="contact-sub">
+          Currently based in <strong>Pune, India</strong> — <strong>US Remote-Ready</strong> and actively exploring opportunities in <strong>Dubai</strong>, <strong>Europe</strong>, <strong>US</strong>, and global remote/relocation roles.
+        </p>
+
+        <div class="contact-info-cards">
+          <div class="cinfo-card">
+            <i class="fa-solid fa-envelope cinfo-icon"></i>
+            <div class="cinfo-label">Email Address</div>
+            <div class="cinfo-val">atharvadengre@gmail.com</div>
+          </div>
+          <div class="cinfo-card">
+            <i class="fa-solid fa-phone cinfo-icon"></i>
+            <div class="cinfo-label">Phone / WhatsApp</div>
+            <div class="cinfo-val">+91 77750 78883</div>
+          </div>
+          <div class="cinfo-card">
+            <i class="fa-solid fa-location-dot cinfo-icon"></i>
+            <div class="cinfo-label">Location Status</div>
+            <div class="cinfo-val">Pune, India · US Remote-Ready · Willing to Travel</div>
+          </div>
+        </div>
+
+        <form id="contactForm" class="contact-form" action="https://formsubmit.co/atharvadengre@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New Portfolio Message - Atharva Dengre Website">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-name">Your Name</label>
+              <input id="cf-name" type="text" name="Name" required placeholder="e.g. Hiring Manager / Recruiter">
+            </div>
+            <div class="form-group">
+              <label for="cf-email">Your Email</label>
+              <input id="cf-email" type="email" name="Email" required placeholder="e.g. manager@enterprise.com">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="cf-message">Message / Opportunity Details</label>
+            <textarea id="cf-message" name="Message" required placeholder="Hello Atharva, I'd like to discuss an SAP S/4HANA MM / MDG / S2P opportunity..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary-glass btn-submit">
+            <span>Send Message Direct to Email</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+          
+          <div class="form-footer-note">
+            <i class="fa-solid fa-shield-heart"></i> Direct inbox submission — response guaranteed within 24 hours.
+          </div>
+        </form>
+
+        <div class="contact-links-bar">
+          <a href="https://www.linkedin.com/in/atharva-dengre" target="_blank" rel="noopener" class="btn-secondary-glass">
+            <i class="fa-brands fa-linkedin"></i> Connect on LinkedIn
+          </a>
+          <a href="https://github.com/AtharvaDengre" target="_blank" rel="noopener" class="btn-secondary-glass">
+            <i class="fa-brands fa-github"></i> View GitHub
+          </a>
+          <button id="copyEmailContactBtn" class="btn-secondary-glass">
+            <i class="fa-regular fa-envelope"></i> Copy Email Address
+          </button>
+          <a href="#hero" class="btn-secondary-glass">
+            <i class="fa-solid fa-arrow-up"></i> Back to Top
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-wrap">
+      <p class="footer-copy">
+        © 2026 <strong>Atharva Dengre</strong> · Built with precision, glassmorphism &amp; intent.
+      </p>
+      <p class="footer-tech">
+        SAP S/4HANA MM &amp; MDG Consultant | Source-to-Pay (S2P) &amp; Procure-to-Pay (P2P) | Agentic AI Specialist
+      </p>
+    </div>
+  </footer>
+
+  <!-- FLOATING QUICK TOGGLE CONTROLS -->
+  <div class="floating-controls">
+    <button id="glowToggleBtn" class="float-btn" title="Toggle Glass Ambient Glow">
+      <i class="fa-solid fa-wand-magic-sparkles"></i>
+    </button>
+    <button id="scrollTopBtn" class="float-btn" title="Scroll to Top">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+  </div>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
