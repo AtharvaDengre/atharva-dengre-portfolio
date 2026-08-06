@@ -109,12 +109,12 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-12 items-center">
           {/* Hero Left Content */}
           <div>
-            <div className="status-badge-group">
-              <div className="status-badge glow-border">
-                <span className="pulse-dot" />
+            <div className="status-badge-group flex flex-col items-start gap-2 mb-6">
+              <div className="status-badge glow-border inline-flex items-center gap-2.5 px-4.5 h-[36px] rounded-full bg-[rgba(255,45,75,0.08)] border border-[rgba(255,45,75,0.3)] font-mono text-[12px] text-accent-red">
+                <span className="pulse-dot w-2 h-2 rounded-full bg-accent-red shadow-[0_0_10px_#ff2d4b] animate-pulse" />
                 <span className="status-text">Open to relocation — Dubai · Singapore · Malaysia</span>
               </div>
-              <div className="status-subline-dim">
+              <div className="status-subline-dim font-mono text-[12px] text-text-muted tracking-wider ml-1.5 flex items-center gap-2">
                 <i className="fa-solid fa-compass text-accent-amber" /> Also exploring: EU roles · Remote (EMEA / APAC time zones)
               </div>
             </div>
@@ -205,9 +205,9 @@ export default function Hero() {
 
               {/* Central Command Card */}
               <div className="glass-command-card pt-6">
-                <div className="command-card-header flex justify-between items-center pb-4 mb-5 border-b border-border-glass pt-2">
+                <div className="command-card-header flex justify-between items-center w-full pb-4 mb-5 border-b border-border-glass pt-2">
                   <div className="command-card-title flex items-center gap-2 text-text-main font-bold font-mono text-[11px]">
-                    <span className="pulse-dot-green" />
+                    <span className="pulse-dot-green w-2 h-2 rounded-full bg-accent-green shadow-[0_0_10px_#39d353] animate-pulse" />
                     <span>SYSTEM_TELEMETRY // ATHARVA.DENGRE</span>
                   </div>
                   <div className="command-card-tag text-accent-red bg-accent-red/10 px-2 py-0.5 rounded border border-accent-red/25 font-mono text-[10.5px]">S2P &amp; P2P ENGINE</div>
@@ -222,40 +222,40 @@ export default function Hero() {
                   </div>
                 </div>
 
-                <div className="command-metrics-list flex flex-col gap-3.5 mb-5">
-                  <div className="command-metric-row bg-white/[0.03] border border-border-glass rounded-lg p-3">
+                <div className="command-metrics-list flex flex-col gap-3.5 mb-5 w-full">
+                  <div className="command-metric-row bg-white/[0.03] border border-border-glass rounded-lg p-3 w-full">
                     <div className="metric-info flex justify-between items-center w-full mb-1.5 font-mono text-[11.5px]">
                       <span className="metric-name text-text-main flex items-center gap-1.5">
                         <i className="fa-solid fa-server text-accent-red" /> S2P / P2P S/4HANA Operations
                       </span>
                       <span className="metric-val text-accent-green font-bold whitespace-nowrap shrink-0 ml-2">ONLINE (99.8% SLA)</span>
                     </div>
-                    <div className="metric-progress h-1 bg-white/10 rounded overflow-hidden">
-                      <div className="metric-fill fill-green h-full rounded" style={{ width: '99.8%' }} />
+                    <div className="metric-progress h-1 bg-white/10 rounded overflow-hidden w-full">
+                      <div className="metric-fill fill-green h-full rounded bg-accent-green" style={{ width: '99.8%' }} />
                     </div>
                   </div>
 
-                  <div className="command-metric-row bg-white/[0.03] border border-border-glass rounded-lg p-3">
+                  <div className="command-metric-row bg-white/[0.03] border border-border-glass rounded-lg p-3 w-full">
                     <div className="metric-info flex justify-between items-center w-full mb-1.5 font-mono text-[11.5px]">
                       <span className="metric-name text-text-main flex items-center gap-1.5">
                         <i className="fa-solid fa-sitemap text-accent-purple" /> MDG Master Data Lifecycle
                       </span>
                       <span className="metric-val text-accent-purple font-bold whitespace-nowrap shrink-0 ml-2">ACTIVE (50K+ Txns)</span>
                     </div>
-                    <div className="metric-progress h-1 bg-white/10 rounded overflow-hidden">
-                      <div className="metric-fill fill-purple h-full rounded" style={{ width: '95%' }} />
+                    <div className="metric-progress h-1 bg-white/10 rounded overflow-hidden w-full">
+                      <div className="metric-fill fill-purple h-full rounded bg-accent-purple" style={{ width: '95%' }} />
                     </div>
                   </div>
 
-                  <div className="command-metric-row bg-white/[0.03] border border-border-glass rounded-lg p-3">
+                  <div className="command-metric-row bg-white/[0.03] border border-border-glass rounded-lg p-3 w-full">
                     <div className="metric-info flex justify-between items-center w-full mb-1.5 font-mono text-[11.5px]">
                       <span className="metric-name text-text-main flex items-center gap-1.5">
                         <i className="fa-solid fa-diagram-project text-accent-amber" /> Ariba CIG &amp; Z-IDOC Middleware
                       </span>
                       <span className="metric-val text-accent-amber font-bold whitespace-nowrap shrink-0 ml-2">STABLE (ZARB/ZICP/ZWPO)</span>
                     </div>
-                    <div className="metric-progress h-1 bg-white/10 rounded overflow-hidden">
-                      <div className="metric-fill fill-amber h-full rounded" style={{ width: '92%' }} />
+                    <div className="metric-progress h-1 bg-white/10 rounded overflow-hidden w-full">
+                      <div className="metric-fill fill-amber h-full rounded bg-accent-amber" style={{ width: '92%' }} />
                     </div>
                   </div>
                 </div>

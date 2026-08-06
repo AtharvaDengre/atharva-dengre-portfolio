@@ -29,23 +29,23 @@ export default function About() {
             <div className="mt-8 pt-6 border-t border-border-glass">
               <h4 className="font-mono text-xs text-text-faint uppercase tracking-wider mb-4">Core Enterprise, Integration &amp; AI Stack</h4>
               <div className="flex flex-wrap gap-2.5">
-                <span className="tech-chip"><i className="fa-solid fa-cart-flatbed" /> Source-to-Pay (S2P)</span>
-                <span className="tech-chip"><i className="fa-solid fa-receipt" /> Procure-to-Pay (P2P)</span>
-                <span className="tech-chip"><i className="fa-solid fa-database" /> SAP S/4HANA MM</span>
-                <span className="tech-chip"><i className="fa-solid fa-sitemap" /> SAP MDG on S/4HANA</span>
-                <span className="tech-chip"><i className="fa-solid fa-boxes-packing" /> Material Master</span>
-                <span className="tech-chip"><i className="fa-solid fa-id-card" /> Business Partner (Vendor/Customer/Employee)</span>
-                <span className="tech-chip"><i className="fa-solid fa-code-branch" /> BRFplus Routing</span>
-                <span className="tech-chip"><i className="fa-solid fa-plug" /> SAP Ariba CIG &amp; WMS</span>
-                <span className="tech-chip"><i className="fa-solid fa-file-export" /> LSMW / Migration Cockpit / Winshuttle</span>
-                <span className="tech-chip"><i className="fa-solid fa-cube" /> WRICEF Objects (W, R, I, C, E, F)</span>
-                <span className="tech-chip"><i className="fa-solid fa-network-wired" /> Z-IDOCs (ZARB, ZICP, ZWPO)</span>
-                <span className="tech-chip"><i className="fa-solid fa-headset" /> ServiceNow ITSM</span>
-                <span className="tech-chip"><i className="fa-solid fa-chart-pie" /> Power BI / SQL on HANA</span>
-                <span className="tech-chip highlight-chip"><i className="fa-solid fa-bolt" /> SAP Joule</span>
-                <span className="tech-chip highlight-chip"><i className="fa-solid fa-robot" /> SAP GenAI Hub</span>
-                <span className="tech-chip highlight-chip"><i className="fa-solid fa-microchip" /> SAP AI Launchpad</span>
-                <span className="tech-chip highlight-chip"><i className="fa-solid fa-brain" /> IBM watsonx RAG</span>
+                <span className="tech-chip font-mono text-xs py-2 px-3.5 rounded-md bg-bg-glass-sub border border-border-glass text-text-muted inline-flex items-center gap-2 transition-all hover:border-accent-red hover:text-accent-red"><i className="fa-solid fa-cart-flatbed" /> Source-to-Pay (S2P)</span>
+                <span className="tech-chip font-mono text-xs py-2 px-3.5 rounded-md bg-bg-glass-sub border border-border-glass text-text-muted inline-flex items-center gap-2 transition-all hover:border-accent-red hover:text-accent-red"><i className="fa-solid fa-receipt" /> Procure-to-Pay (P2P)</span>
+                <span className="tech-chip font-mono text-xs py-2 px-3.5 rounded-md bg-bg-glass-sub border border-border-glass text-text-muted inline-flex items-center gap-2 transition-all hover:border-accent-red hover:text-accent-red"><i className="fa-solid fa-database" /> SAP S/4HANA MM</span>
+                <span className="tech-chip font-mono text-xs py-2 px-3.5 rounded-md bg-bg-glass-sub border border-border-glass text-text-muted inline-flex items-center gap-2 transition-all hover:border-accent-red hover:text-accent-red"><i className="fa-solid fa-sitemap" /> SAP MDG on S/4HANA</span>
+                <span className="tech-chip font-mono text-xs py-2 px-3.5 rounded-md bg-bg-glass-sub border border-border-glass text-text-muted inline-flex items-center gap-2 transition-all hover:border-accent-red hover:text-accent-red"><i className="fa-solid fa-boxes-packing" /> Material Master</span>
+                <span className="tech-chip font-mono text-xs py-2 px-3.5 rounded-md bg-bg-glass-sub border border-border-glass text-text-muted inline-flex items-center gap-2 transition-all hover:border-accent-red hover:text-accent-red"><i className="fa-solid fa-id-card" /> Business Partner (Vendor/Customer/Employee)</span>
+                <span className="tech-chip font-mono text-xs py-2 px-3.5 rounded-md bg-bg-glass-sub border border-border-glass text-text-muted inline-flex items-center gap-2 transition-all hover:border-accent-red hover:text-accent-red"><i className="fa-solid fa-code-branch" /> BRFplus Routing</span>
+                <span className="tech-chip font-mono text-xs py-2 px-3.5 rounded-md bg-bg-glass-sub border border-border-glass text-text-muted inline-flex items-center gap-2 transition-all hover:border-accent-red hover:text-accent-red"><i className="fa-solid fa-plug" /> SAP Ariba CIG &amp; WMS</span>
+                <span className="tech-chip font-mono text-xs py-2 px-3.5 rounded-md bg-bg-glass-sub border border-border-glass text-text-muted inline-flex items-center gap-2 transition-all hover:border-accent-red hover:text-accent-red"><i className="fa-solid fa-file-export" /> LSMW / Migration Cockpit / Winshuttle</span>
+                <span className="tech-chip font-mono text-xs py-2 px-3.5 rounded-md bg-bg-glass-sub border border-border-glass text-text-muted inline-flex items-center gap-2 transition-all hover:border-accent-red hover:text-accent-red"><i className="fa-solid fa-cube" /> WRICEF Objects (W, R, I, C, E, F)</span>
+                <span className="tech-chip font-mono text-xs py-2 px-3.5 rounded-md bg-bg-glass-sub border border-border-glass text-text-muted inline-flex items-center gap-2 transition-all hover:border-accent-red hover:text-accent-red"><i className="fa-solid fa-network-wired" /> Z-IDOCs (ZARB, ZICP, ZWPO)</span>
+                <span className="tech-chip font-mono text-xs py-2 px-3.5 rounded-md bg-bg-glass-sub border border-border-glass text-text-muted inline-flex items-center gap-2 transition-all hover:border-accent-red hover:text-accent-red"><i className="fa-solid fa-headset" /> ServiceNow ITSM</span>
+                <span className="tech-chip font-mono text-xs py-2 px-3.5 rounded-md bg-bg-glass-sub border border-border-glass text-text-muted inline-flex items-center gap-2 transition-all hover:border-accent-red hover:text-accent-red"><i className="fa-solid fa-chart-pie" /> Power BI / SQL on HANA</span>
+                <span className="tech-chip highlight-chip font-mono text-xs py-2 px-3.5 rounded-md bg-accent-purple/15 border border-accent-purple/40 text-text-main inline-flex items-center gap-2 transition-all hover:border-accent-red hover:text-accent-red"><i className="fa-solid fa-bolt" /> SAP Joule</span>
+                <span className="tech-chip highlight-chip font-mono text-xs py-2 px-3.5 rounded-md bg-accent-purple/15 border border-accent-purple/40 text-text-main inline-flex items-center gap-2 transition-all hover:border-accent-red hover:text-accent-red"><i className="fa-solid fa-robot" /> SAP GenAI Hub</span>
+                <span className="tech-chip highlight-chip font-mono text-xs py-2 px-3.5 rounded-md bg-accent-purple/15 border border-accent-purple/40 text-text-main inline-flex items-center gap-2 transition-all hover:border-accent-red hover:text-accent-red"><i className="fa-solid fa-microchip" /> SAP AI Launchpad</span>
+                <span className="tech-chip highlight-chip font-mono text-xs py-2 px-3.5 rounded-md bg-accent-purple/15 border border-accent-purple/40 text-text-main inline-flex items-center gap-2 transition-all hover:border-accent-red hover:text-accent-red"><i className="fa-solid fa-brain" /> IBM watsonx RAG</span>
               </div>
             </div>
           </div>
