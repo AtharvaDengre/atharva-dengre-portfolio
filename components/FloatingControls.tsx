@@ -22,20 +22,8 @@ export default function FloatingControls() {
 
   return (
     <>
-      {/* Scroll to Top on Bottom-Left */}
+      {/* Glass FX Toggle on Bottom-Left */}
       <div className="fixed bottom-6 left-6 z-40">
-        <button
-          onClick={scrollToTop}
-          className="w-11 h-11 rounded-full bg-[#160c1a]/90 border border-border-glass-light text-text-main flex items-center justify-center cursor-pointer backdrop-blur-xl transition-all hover:border-accent-red hover:text-accent-red hover:-translate-y-0.5 shadow-2xl"
-          title="Scroll to Top"
-          aria-label="Scroll to top of page"
-        >
-          <i className="fa-solid fa-chevron-up text-sm" />
-        </button>
-      </div>
-
-      {/* Glass FX Toggle on Bottom-Right */}
-      <div className="fixed bottom-6 right-6 z-40">
         <button
           onClick={toggleGlow}
           className={`w-11 h-11 rounded-full bg-[#160c1a]/90 border ${
@@ -45,6 +33,18 @@ export default function FloatingControls() {
           aria-label="Toggle ambient glass glow effects"
         >
           <i className="fa-solid fa-wand-magic-sparkles text-sm" />
+        </button>
+      </div>
+
+      {/* Scroll to Top on Bottom-Right */}
+      <div className="fixed bottom-6 right-6 z-40">
+        <button
+          onClick={scrollToTop}
+          className="w-11 h-11 rounded-full bg-[#160c1a]/90 border border-border-glass-light text-text-main flex items-center justify-center cursor-pointer backdrop-blur-xl transition-all hover:border-accent-red hover:text-accent-red hover:-translate-y-0.5 shadow-2xl"
+          title="Scroll to Top"
+          aria-label="Scroll to top of page"
+        >
+          <i className="fa-solid fa-chevron-up text-sm" />
         </button>
       </div>
     </>
