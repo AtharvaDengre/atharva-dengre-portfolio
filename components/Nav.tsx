@@ -25,6 +25,9 @@ export default function Nav() {
         </a>
 
         <div className={`nav-menu ${mobileOpen ? 'mobile-open' : ''}`} id="navMenu">
+          <a href="#simulator" onClick={() => setMobileOpen(false)} className="nav-link text-accent-red font-bold">
+            <i className="fa-solid fa-microchip nav-icon text-accent-red"></i> Live AI Simulator
+          </a>
           <a href="#about" onClick={() => setMobileOpen(false)} className="nav-link">
             <i className="fa-solid fa-user-astronaut nav-icon"></i> About
           </a>
