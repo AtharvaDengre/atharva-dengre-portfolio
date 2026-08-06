@@ -10,6 +10,7 @@ import Projects from '@/components/Projects';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import FloatingControls from '@/components/FloatingControls';
+import GyroTiltManager from '@/components/GyroTiltManager';
 import ToastContainer from '@/components/ToastContainer';
 import BgCanvas from '@/components/BgCanvas';
 
@@ -40,6 +41,7 @@ export default function Home() {
       <Contact />
       <Footer />
       <FloatingControls />
+      <GyroTiltManager />
     </main>
   );
 }
