@@ -1017,9 +1017,11 @@ nav.scrolled {
     border-bottom: 1px solid var(--accent-red);
     transform: translateY(-150%);
     transition: transform var(--transition-normal);
+    z-index: 50;
   }
   .nav-menu.mobile-open { transform: translateY(0); }
-  .mobile-toggle { display: block; }
+  .mobile-toggle { display: flex !important; align-items: center; justify-content: center; }
+  .nav-actions .btn-glass { display: none !important; }
 }
 
 html, body, main {
