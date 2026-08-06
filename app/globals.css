@@ -585,7 +585,7 @@ nav.scrolled {
   justify-content: center;
   position: relative;
 }
-.glass-command-wrapper, .glass-command-card, .glass-badge {
+.glass-command-wrapper, .glass-command-card {
   position: relative;
   width: 100%;
   max-width: 440px;
@@ -595,6 +595,10 @@ nav.scrolled {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   will-change: transform;
+}
+.glass-badge {
+  width: auto !important;
+  max-width: max-content !important;
 }
 .command-glow-ring {
   position: absolute;
