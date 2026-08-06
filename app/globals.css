@@ -1066,6 +1066,9 @@ html, body, main {
     order: -1;
     width: 100%;
   }
+  .status-badge-group {
+    margin-top: 28px !important;
+  }
   .glass-command-wrapper {
     max-width: 100% !important;
     padding: 4px !important;
