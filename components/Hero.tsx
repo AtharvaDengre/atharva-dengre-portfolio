@@ -41,8 +41,8 @@ export default function Hero() {
     return () => clearTimeout(timer);
   }, [charIdx, isDeleting, roleIdx]);
 
-  // Stat Count-up Effect
-  const [stats, setStats] = useState({ years: 0, sla: 0, txns: 0, certs: 0 });
+  // Stat Count-up Effect (initialized with final values fallback so numbers are never stuck at 0)
+  const [stats, setStats] = useState({ years: 2.8, sla: 99.8, txns: 50, certs: 3 });
   const heroRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -233,34 +233,43 @@ export default function Hero() {
                 {/* Live Enterprise Metrics Panel */}
                 <div className="command-metrics-list flex flex-col gap-3.5 mb-5">
                   <div className="command-metric-row bg-[rgba(255,255,255,0.03)] border border-border-glass rounded-lg p-3">
-                    <div className="metric-info flex justify-between items-start w-full font-mono text-[11px] mb-1.5">
+                    <div className="metric-info flex justify-between items-start w-full font-mono text-[11px] mb-1.5 gap-2">
                       <span className="metric-name text-text-main flex items-start gap-1.5 leading-snug">
                         <i className="fa-solid fa-server text-accent-red mt-0.5" />
                         <span>S2P / P2P S/4HANA<br />Operations</span>
                       </span>
-                      <span className="metric-val text-accent-green font-bold whitespace-nowrap ml-2">ONLINE (99.8% SLA)</span>
+                      <span className="metric-val text-accent-green font-bold whitespace-nowrap ml-auto text-right pl-2">
+                        <span className="opacity-0 w-0 inline-block pointer-events-none" aria-hidden="true">&nbsp;—&nbsp;</span>
+                        ONLINE (99.8% SLA)
+                      </span>
                     </div>
                     <div className="metric-progress h-1 bg-[rgba(255,255,255,0.08)] rounded overflow-hidden"><div className="metric-fill fill-green h-full bg-accent-green rounded" style={{ width: '99.8%' }}></div></div>
                   </div>
 
                   <div className="command-metric-row bg-[rgba(255,255,255,0.03)] border border-border-glass rounded-lg p-3">
-                    <div className="metric-info flex justify-between items-start w-full font-mono text-[11px] mb-1.5">
+                    <div className="metric-info flex justify-between items-start w-full font-mono text-[11px] mb-1.5 gap-2">
                       <span className="metric-name text-text-main flex items-start gap-1.5 leading-snug">
                         <i className="fa-solid fa-sitemap text-accent-purple mt-0.5" />
                         <span>MDG Master Data Lifecycle</span>
                       </span>
-                      <span className="metric-val text-accent-purple font-bold whitespace-nowrap ml-2">ACTIVE (50K+ Txns)</span>
+                      <span className="metric-val text-accent-purple font-bold whitespace-nowrap ml-auto text-right pl-2">
+                        <span className="opacity-0 w-0 inline-block pointer-events-none" aria-hidden="true">&nbsp;—&nbsp;</span>
+                        ACTIVE (50K+ Txns)
+                      </span>
                     </div>
                     <div className="metric-progress h-1 bg-[rgba(255,255,255,0.08)] rounded overflow-hidden"><div className="metric-fill fill-purple h-full bg-accent-purple rounded" style={{ width: '95%' }}></div></div>
                   </div>
 
                   <div className="command-metric-row bg-[rgba(255,255,255,0.03)] border border-border-glass rounded-lg p-3">
-                    <div className="metric-info flex justify-between items-start w-full font-mono text-[11px] mb-1.5">
+                    <div className="metric-info flex justify-between items-start w-full font-mono text-[11px] mb-1.5 gap-2">
                       <span className="metric-name text-text-main flex items-start gap-1.5 leading-snug">
                         <i className="fa-solid fa-diagram-project text-accent-amber mt-0.5" />
                         <span>Ariba CIG &amp; Z-IDOC<br />Middleware</span>
                       </span>
-                      <span className="metric-val text-accent-amber font-bold whitespace-nowrap ml-2">STABLE (ZARB/ZICP/ZWPO)</span>
+                      <span className="metric-val text-accent-amber font-bold whitespace-nowrap ml-auto text-right pl-2">
+                        <span className="opacity-0 w-0 inline-block pointer-events-none" aria-hidden="true">&nbsp;—&nbsp;</span>
+                        STABLE (ZARB/ZICP/ZWPO)
+                      </span>
                     </div>
                     <div className="metric-progress h-1 bg-[rgba(255,255,255,0.08)] rounded overflow-hidden"><div className="metric-fill fill-amber h-full bg-accent-amber rounded" style={{ width: '92%' }}></div></div>
                   </div>
