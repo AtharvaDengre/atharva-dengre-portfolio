@@ -3,6 +3,11 @@
 import { useEffect, useState, useRef } from 'react';
 import { showToast } from './ToastContainer';
 
+// Configurable Gyroscope Motion Constants
+const GYRO_SENSITIVITY = 0.55; // Multiplier mapping device orientation to tilt (2.5x previous 0.22)
+const MAX_TILT_DEG = 20; // Maximum tilt angle in degrees (+-20deg)
+const LERP_FACTOR = 0.08; // LERP smoothing speed (fluid & zero jitter)
+
 export default function GyroTiltManager() {
   const [needsPermission, setNeedsPermission] = useState(false);
   const [motionEnabled, setMotionEnabled] = useState(false);
@@ -88,25 +93,25 @@ export default function GyroTiltManager() {
     // Normalize beta around neutral 45 deg angle
     const normBeta = beta - 45;
 
-    // Clamp tilt angles to +-10deg for refined, non-chaotic motion
+    // Clamp tilt angles to +-MAX_TILT_DEG for refined, non-chaotic motion
     const clamp = (val: number, min: number, max: number) => Math.max(min, Math.min(max, val));
 
     // Map beta to rotateX (inverted for natural depth response)
-    targetX.current = clamp(-normBeta * 0.22, -10, 10);
+    targetX.current = clamp(-normBeta * GYRO_SENSITIVITY, -MAX_TILT_DEG, MAX_TILT_DEG);
     // Map gamma to rotateY
-    targetY.current = clamp(gamma * 0.22, -10, 10);
+    targetY.current = clamp(gamma * GYRO_SENSITIVITY, -MAX_TILT_DEG, MAX_TILT_DEG);
   };
 
   const startAnimationLoop = () => {
     const update = () => {
-      // Smooth LERP (0.08 for fluid motion)
-      currentX.current += (targetX.current - currentX.current) * 0.08;
-      currentY.current += (targetY.current - currentY.current) * 0.08;
+      // Smooth LERP (LERP_FACTOR for fluid motion)
+      currentX.current += (targetX.current - currentX.current) * LERP_FACTOR;
+      currentY.current += (targetY.current - currentY.current) * LERP_FACTOR;
 
       // Select target 3D cards (#avatarCard, .gyro-tilt)
       const tiltCards = document.querySelectorAll<HTMLElement>('#avatarCard, .gyro-tilt');
       tiltCards.forEach((card) => {
-        card.style.transform = `perspective(1000px) rotateX(${currentX.current.toFixed(2)}deg) rotateY(${currentY.current.toFixed(2)}deg) scale3d(1.01, 1.01, 1.01)`;
+        card.style.transform = `perspective(1000px) rotateX(${currentX.current.toFixed(2)}deg) rotateY(${currentY.current.toFixed(2)}deg) scale3d(1.02, 1.02, 1.02)`;
       });
 
       rafId.current = requestAnimationFrame(update);
@@ -137,3 +142,4 @@ export default function GyroTiltManager() {
     </div>
   );
 }
+
