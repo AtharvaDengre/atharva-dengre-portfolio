@@ -4,9 +4,10 @@ import { useEffect, useState, useRef } from 'react';
 import { showToast } from './ToastContainer';
 
 // Configurable Gyroscope Motion Constants
-const GYRO_SENSITIVITY = 0.55; // Multiplier mapping device orientation to tilt (2.5x previous 0.22)
+const GYRO_SENSITIVITY = 0.55; // Multiplier mapping device orientation to tilt
 const MAX_TILT_DEG = 20; // Maximum tilt angle in degrees (+-20deg)
 const LERP_FACTOR = 0.08; // LERP smoothing speed (fluid & zero jitter)
+const GYRO_RESUME_DELAY_MS = 500; // Debounce delay in ms after user stops touching/scrolling
 
 export default function GyroTiltManager() {
   const [needsPermission, setNeedsPermission] = useState(false);
@@ -21,6 +22,8 @@ export default function GyroTiltManager() {
 
   const rafId = useRef<number | null>(null);
   const isListening = useRef(false);
+  const isUserInteracting = useRef(false);
+  const resumeTimeout = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     // 1. Respect prefers-reduced-motion
@@ -52,10 +55,33 @@ export default function GyroTiltManager() {
     };
   }, []);
 
+  const handleTouchOrScrollStart = () => {
+    isUserInteracting.current = true;
+    // Ease back to neutral flat position (0deg) smoothly via LERP
+    targetX.current = 0;
+    targetY.current = 0;
+
+    if (resumeTimeout.current) {
+      clearTimeout(resumeTimeout.current);
+    }
+
+    resumeTimeout.current = setTimeout(() => {
+      isUserInteracting.current = false;
+    }, GYRO_RESUME_DELAY_MS);
+  };
+
   const enableGyroListeners = () => {
     if (isListening.current) return;
     isListening.current = true;
+
+    // Attach orientation & touch/scroll listeners
     window.addEventListener('deviceorientation', handleOrientation, true);
+    window.addEventListener('touchstart', handleTouchOrScrollStart, { passive: true });
+    window.addEventListener('touchmove', handleTouchOrScrollStart, { passive: true });
+    window.addEventListener('touchend', handleTouchOrScrollStart, { passive: true });
+    window.addEventListener('touchcancel', handleTouchOrScrollStart, { passive: true });
+    window.addEventListener('scroll', handleTouchOrScrollStart, { passive: true });
+
     setMotionEnabled(true);
     setNeedsPermission(false);
     startAnimationLoop();
@@ -84,6 +110,7 @@ export default function GyroTiltManager() {
   };
 
   const handleOrientation = (e: DeviceOrientationEvent) => {
+    if (isUserInteracting.current) return;
     if (e.beta === null || e.gamma === null) return;
 
     // Standard phone holding angle is ~45 deg
@@ -123,6 +150,14 @@ export default function GyroTiltManager() {
   const stopGyro = () => {
     isListening.current = false;
     window.removeEventListener('deviceorientation', handleOrientation, true);
+    window.removeEventListener('touchstart', handleTouchOrScrollStart);
+    window.removeEventListener('touchmove', handleTouchOrScrollStart);
+    window.removeEventListener('touchend', handleTouchOrScrollStart);
+    window.removeEventListener('touchcancel', handleTouchOrScrollStart);
+    window.removeEventListener('scroll', handleTouchOrScrollStart);
+    if (resumeTimeout.current) {
+      clearTimeout(resumeTimeout.current);
+    }
     if (rafId.current) {
       cancelAnimationFrame(rafId.current);
     }
