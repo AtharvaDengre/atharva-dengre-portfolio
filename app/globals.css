@@ -491,12 +491,13 @@ nav.scrolled {
 
 .typing-container {
   font-family: var(--font-mono);
-  font-size: clamp(15px, 2vw, 20px);
+  font-size: clamp(14px, 1.8vw, 19px);
   color: var(--accent-amber);
   margin-bottom: 24px;
   min-height: 32px;
-  display: flex;
-  align-items: center;
+  display: block;
+  line-height: 1.4;
+  word-break: break-word;
 }
 .typing-prefix {
   color: var(--accent-red);
@@ -505,10 +506,11 @@ nav.scrolled {
 }
 .cursor-caret {
   display: inline-block;
-  width: 10px;
-  height: 20px;
+  width: 9px;
+  height: 18px;
   background: var(--accent-red);
   margin-left: 4px;
+  vertical-align: middle;
   animation: blinkCaret 0.8s infinite;
 }
 @keyframes blinkCaret {

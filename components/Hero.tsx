@@ -128,10 +128,10 @@ export default function Hero() {
               SAP S/4HANA MM &amp; MDG Consultant | S2P &amp; P2P Operations | SAP GenAI &amp; Agentic ERP Automations
             </div>
 
-            <div className="typing-container font-mono text-[clamp(15px,2vw,20px)] text-accent-amber mb-6 min-h-[32px] flex items-center">
-              <span className="typing-prefix text-accent-red mr-1.5 font-bold">&gt; </span>
+            <div className="typing-container font-mono text-[clamp(14px,1.8vw,19px)] text-accent-amber mb-6 min-h-[32px] block leading-snug">
+              <span className="typing-prefix text-accent-red mr-1.5 font-bold">&gt;&nbsp;</span>
               <span id="typingText" className="typing-text">{roleText}</span>
-              <span className="cursor-caret inline-block w-2.5 h-5 bg-accent-red ml-1 animate-pulse"></span>
+              <span className="cursor-caret inline-block w-2.5 h-4.5 bg-accent-red ml-1 align-middle animate-pulse"></span>
             </div>
 
             <p className="hero-description text-[16.5px] text-text-muted max-w-[580px] mb-9 leading-relaxed">
