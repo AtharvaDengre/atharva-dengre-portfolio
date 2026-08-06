@@ -2,9 +2,11 @@
 
 import { useState } from 'react';
 import { showToast } from './ToastContainer';
+import { useGyro } from './GyroContext';
 
 export default function FloatingControls() {
   const [glowOn, setGlowOn] = useState(true);
+  const { gyroEnabled, isSupportedMobile, toggleGyro } = useGyro();
 
   const toggleGlow = () => {
     const nextState = !glowOn;
@@ -22,8 +24,9 @@ export default function FloatingControls() {
 
   return (
     <>
-      {/* Glass FX Toggle on Bottom-Left */}
-      <div className="fixed bottom-4 left-4 sm:bottom-6 sm:left-6 z-40">
+      {/* Glass FX Toggle & Gyroscope Motion Toggle on Bottom-Left */}
+      <div className="fixed bottom-4 left-4 sm:bottom-6 sm:left-6 z-40 flex items-center gap-2">
+        {/* Ambient Glass Glow Toggle */}
         <button
           onClick={toggleGlow}
           className={`w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-[#160c1a]/80 border ${
@@ -34,6 +37,22 @@ export default function FloatingControls() {
         >
           <i className="fa-solid fa-wand-magic-sparkles text-xs sm:text-sm" />
         </button>
+
+        {/* Gyroscope 3D Motion Tilt Toggle - Only visible on supported touch/mobile devices */}
+        {isSupportedMobile && (
+          <button
+            onClick={toggleGyro}
+            className={`w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-[#160c1a]/80 border ${
+              gyroEnabled
+                ? 'border-accent-red/60 text-accent-red shadow-[0_0_15px_rgba(255,45,75,0.35)]'
+                : 'border-border-glass-light text-text-faint'
+            } flex items-center justify-center cursor-pointer backdrop-blur-xl transition-all hover:scale-110 active:scale-95 shadow-2xl opacity-80 hover:opacity-100`}
+            title="Toggle 3D Motion Tilt (Gyroscope)"
+            aria-label="Toggle gyroscope 3D motion tilt effect"
+          >
+            <i className="fa-solid fa-compass text-xs sm:text-sm" />
+          </button>
+        )}
       </div>
 
       {/* Scroll to Top on Bottom-Right */}

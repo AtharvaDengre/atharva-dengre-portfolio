@@ -13,35 +13,38 @@ import FloatingControls from '@/components/FloatingControls';
 import GyroTiltManager from '@/components/GyroTiltManager';
 import ToastContainer from '@/components/ToastContainer';
 import BgCanvas from '@/components/BgCanvas';
+import { GyroProvider } from '@/components/GyroContext';
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen">
-      {/* Ambient Glows */}
-      <div className="ambient-glow glow-1" />
-      <div className="ambient-glow glow-2" />
-      <div className="ambient-glow glow-3" />
+    <GyroProvider>
+      <main className="relative min-h-screen">
+        {/* Ambient Glows */}
+        <div className="ambient-glow glow-1" />
+        <div className="ambient-glow glow-2" />
+        <div className="ambient-glow glow-3" />
 
-      {/* Particle Mesh Canvas */}
-      <BgCanvas />
+        {/* Particle Mesh Canvas */}
+        <BgCanvas />
 
-      {/* Global Toast Stack */}
-      <ToastContainer />
+        {/* Global Toast Stack */}
+        <ToastContainer />
 
-      {/* Page Sections */}
-      <Nav />
-      <Hero />
-      <About />
-      <Experience />
-      <Methodology />
-      <SapAi />
-      <Certifications />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
-      <FloatingControls />
-      <GyroTiltManager />
-    </main>
+        {/* Page Sections */}
+        <Nav />
+        <Hero />
+        <About />
+        <Experience />
+        <Methodology />
+        <SapAi />
+        <Certifications />
+        <Skills />
+        <Projects />
+        <Contact />
+        <Footer />
+        <FloatingControls />
+        <GyroTiltManager />
+      </main>
+    </GyroProvider>
   );
 }
