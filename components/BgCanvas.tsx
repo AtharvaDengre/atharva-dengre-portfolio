@@ -14,6 +14,7 @@ export default function BgCanvas() {
     let animationFrameId: number;
     let width = (canvas.width = window.innerWidth);
     let height = (canvas.height = window.innerHeight);
+    const isMobile = window.innerWidth < 768;
 
     const handleResize = () => {
       if (!canvas) return;
@@ -22,7 +23,7 @@ export default function BgCanvas() {
     };
     window.addEventListener('resize', handleResize);
 
-    const mouse = { x: null as number | null, y: null as number | null, radius: 140 };
+    const mouse = { x: null as number | null, y: null as number | null, radius: 120 };
 
     const handleMouseMove = (e: MouseEvent) => {
       mouse.x = e.clientX;
@@ -33,10 +34,12 @@ export default function BgCanvas() {
       mouse.y = null;
     };
 
-    window.addEventListener('mousemove', handleMouseMove);
-    window.addEventListener('mouseleave', handleMouseLeave);
+    if (!isMobile) {
+      window.addEventListener('mousemove', handleMouseMove);
+      window.addEventListener('mouseleave', handleMouseLeave);
+    }
 
-    const particleCount = Math.min(Math.floor(window.innerWidth / 20), 65);
+    const particleCount = isMobile ? 12 : Math.min(Math.floor(window.innerWidth / 22), 55);
 
     class Particle {
       x: number;
@@ -50,11 +53,11 @@ export default function BgCanvas() {
       constructor() {
         this.x = Math.random() * width;
         this.y = Math.random() * height;
-        this.vx = (Math.random() - 0.5) * 0.8;
-        this.vy = (Math.random() - 0.5) * 0.8;
+        this.vx = (Math.random() - 0.5) * 0.6;
+        this.vy = (Math.random() - 0.5) * 0.6;
         this.radius = Math.random() * 2 + 1;
         this.color = Math.random() > 0.4 ? 'rgba(255, 45, 75, ' : 'rgba(157, 78, 221, ';
-        this.alpha = Math.random() * 0.5 + 0.2;
+        this.alpha = Math.random() * 0.4 + 0.15;
       }
 
       update() {
@@ -64,7 +67,7 @@ export default function BgCanvas() {
         if (this.x < 0 || this.x > width) this.vx *= -1;
         if (this.y < 0 || this.y > height) this.vy *= -1;
 
-        if (mouse.x !== null && mouse.y !== null) {
+        if (!isMobile && mouse.x !== null && mouse.y !== null) {
           const dx = mouse.x - this.x;
           const dy = mouse.y - this.y;
           const dist = Math.sqrt(dx * dx + dy * dy);
@@ -97,18 +100,20 @@ export default function BgCanvas() {
         particles[i].update();
         particles[i].draw();
 
-        for (let j = i + 1; j < particles.length; j++) {
-          const dx = particles[i].x - particles[j].x;
-          const dy = particles[i].y - particles[j].y;
-          const dist = Math.sqrt(dx * dx + dy * dy);
+        if (!isMobile) {
+          for (let j = i + 1; j < particles.length; j++) {
+            const dx = particles[i].x - particles[j].x;
+            const dy = particles[i].y - particles[j].y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
 
-          if (dist < 120) {
-            ctx.beginPath();
-            ctx.moveTo(particles[i].x, particles[i].y);
-            ctx.lineTo(particles[j].x, particles[j].y);
-            ctx.strokeStyle = `rgba(255, 45, 75, ${0.15 * (1 - dist / 120)})`;
-            ctx.lineWidth = 0.6;
-            ctx.stroke();
+            if (dist < 100) {
+              ctx.beginPath();
+              ctx.moveTo(particles[i].x, particles[i].y);
+              ctx.lineTo(particles[j].x, particles[j].y);
+              ctx.strokeStyle = `rgba(255, 45, 75, ${0.12 * (1 - dist / 100)})`;
+              ctx.lineWidth = 0.5;
+              ctx.stroke();
+            }
           }
         }
       }
@@ -119,8 +124,10 @@ export default function BgCanvas() {
 
     return () => {
       window.removeEventListener('resize', handleResize);
-      window.removeEventListener('mousemove', handleMouseMove);
-      window.removeEventListener('mouseleave', handleMouseLeave);
+      if (!isMobile) {
+        window.removeEventListener('mousemove', handleMouseMove);
+        window.removeEventListener('mouseleave', handleMouseLeave);
+      }
       cancelAnimationFrame(animationFrameId);
     };
   }, []);

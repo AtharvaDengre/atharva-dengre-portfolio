@@ -217,7 +217,7 @@ export default function SapAi() {
                 id="scenarioSelect"
                 value={selectedScenario}
                 onChange={(e) => setSelectedScenario(e.target.value)}
-                className="bg-bg-dark border border-border-glass-light text-text-main font-mono text-[12.5px] py-2.5 px-3.5 rounded-md outline-none cursor-pointer min-w-[320px] max-sm:w-full"
+                className="bg-bg-dark border border-border-glass-light text-text-main font-mono text-[12.5px] py-2.5 px-3.5 rounded-md outline-none cursor-pointer w-full sm:w-[320px]"
               >
                 <option value="vendor_block">1. Vendor Master BP Release Block (MDG / ME21N)</option>
                 <option value="idoc_desadv">2. Custom Z-IDOC DESADV Quantity Mismatch Error (WE02 / ZWPO / Ariba)</option>
