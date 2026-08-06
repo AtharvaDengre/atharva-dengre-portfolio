@@ -25,7 +25,7 @@ export default function Contact() {
           </p>
 
           {/* Reflowed Contact Info Cards Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-[700px] mx-auto mb-9">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-[900px] mx-auto mb-9">
             <div className="bg-bg-glass-sub border border-border-glass rounded-xl p-5 text-center backdrop-blur-xl">
               <i className="fa-solid fa-envelope text-xl text-accent-red mb-2 block" />
               <div className="font-mono text-[10.5px] text-text-faint uppercase tracking-wider mb-1">Email Address</div>
@@ -35,7 +35,7 @@ export default function Contact() {
             <div className="bg-bg-glass-sub border border-border-glass rounded-xl p-5 text-center backdrop-blur-xl overflow-hidden">
               <i className="fa-solid fa-location-dot text-xl text-accent-red mb-2 block" />
               <div className="font-mono text-[10.5px] text-text-faint uppercase tracking-wider mb-1">Location Status</div>
-              <div className="font-mono text-[10px] font-semibold text-text-main leading-tight whitespace-nowrap">Pune, India · Open to relocation · EMEA / APAC remote</div>
+              <div className="font-mono text-[12.5px] font-semibold text-text-main leading-tight">Pune, India · Open to relocation · EMEA / APAC remote</div>
             </div>
           </div>
 
