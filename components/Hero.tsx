@@ -128,10 +128,12 @@ export default function Hero() {
               SAP S/4HANA MM &amp; MDG Consultant | S2P &amp; P2P Operations | SAP GenAI &amp; Agentic ERP Automations
             </div>
 
-            <div className="typing-container font-mono text-[clamp(14px,1.8vw,19px)] text-accent-amber mb-6 min-h-[32px] block leading-snug">
-              <span className="typing-prefix text-accent-red mr-1.5 font-bold">&gt;&nbsp;</span>
-              <span id="typingText" className="typing-text">{roleText}</span>
-              <span className="cursor-caret inline-block w-2.5 h-4.5 bg-accent-red ml-1 align-middle animate-pulse"></span>
+            <div className="typing-container font-mono text-[clamp(13px,1.5vw,17.5px)] text-accent-amber mb-6 min-h-[32px] leading-normal">
+              <span className="typing-prefix text-accent-red font-bold">&gt;&nbsp;</span>
+              <span className="inline whitespace-normal">
+                <span id="typingText" className="typing-text">{roleText}</span>
+                <span className="cursor-caret inline-block w-2.5 h-4 bg-accent-red ml-1 align-middle animate-pulse"></span>
+              </span>
             </div>
 
             <p className="hero-description text-[16.5px] text-text-muted max-w-[580px] mb-9 leading-relaxed">
@@ -187,7 +189,7 @@ export default function Hero() {
 
           {/* Hero Visual Command Center Card */}
           <div className="hero-visual flex justify-center relative">
-            <div className="glass-command-wrapper relative w-full max-w-[480px] p-[15px]" id="avatarCard" ref={cardRef} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
+            <div className="glass-command-wrapper relative w-full max-w-[490px] p-[15px]" id="avatarCard" ref={cardRef} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
               <div className="command-glow-ring absolute inset-0 rounded-3xl bg-gradient-to-br from-accent-red via-accent-purple to-accent-amber blur-2xl opacity-45 z-0 animate-pulse"></div>
               
               {/* Top Floating Badge */}
@@ -222,25 +224,25 @@ export default function Hero() {
                 {/* Live Enterprise Metrics Panel */}
                 <div className="command-metrics-list flex flex-col gap-3.5 mb-5">
                   <div className="command-metric-row bg-[rgba(255,255,255,0.03)] border border-border-glass rounded-lg p-3">
-                    <div className="metric-info flex justify-between items-center w-full font-mono text-[11px] mb-1.5">
-                      <span className="metric-name text-text-main flex items-center gap-1.5 whitespace-nowrap"><i className="fa-solid fa-server text-accent-red"></i> S2P / P2P S/4HANA Operations</span>
-                      <span className="metric-val text-accent-green font-bold whitespace-nowrap ml-2">ONLINE (99.8% SLA)</span>
+                    <div className="metric-info flex justify-between items-center w-full font-mono text-[10.5px] mb-1.5">
+                      <span className="metric-name text-text-main flex items-center gap-1.5 shrink-0"><i className="fa-solid fa-server text-accent-red" /> S2P / P2P S/4HANA Operations</span>
+                      <span className="metric-val text-accent-green font-bold whitespace-nowrap ml-2 shrink-0">ONLINE (99.8% SLA)</span>
                     </div>
                     <div className="metric-progress h-1 bg-[rgba(255,255,255,0.08)] rounded overflow-hidden"><div className="metric-fill fill-green h-full bg-accent-green rounded" style={{ width: '99.8%' }}></div></div>
                   </div>
 
                   <div className="command-metric-row bg-[rgba(255,255,255,0.03)] border border-border-glass rounded-lg p-3">
-                    <div className="metric-info flex justify-between items-center w-full font-mono text-[11px] mb-1.5">
-                      <span className="metric-name text-text-main flex items-center gap-1.5 whitespace-nowrap"><i className="fa-solid fa-sitemap text-accent-purple"></i> MDG Master Data Lifecycle</span>
-                      <span className="metric-val text-accent-purple font-bold whitespace-nowrap ml-2">ACTIVE (50K+ Txns)</span>
+                    <div className="metric-info flex justify-between items-center w-full font-mono text-[10.5px] mb-1.5">
+                      <span className="metric-name text-text-main flex items-center gap-1.5 shrink-0"><i className="fa-solid fa-sitemap text-accent-purple" /> MDG Master Data Lifecycle</span>
+                      <span className="metric-val text-accent-purple font-bold whitespace-nowrap ml-2 shrink-0">ACTIVE (50K+ Txns)</span>
                     </div>
                     <div className="metric-progress h-1 bg-[rgba(255,255,255,0.08)] rounded overflow-hidden"><div className="metric-fill fill-purple h-full bg-accent-purple rounded" style={{ width: '95%' }}></div></div>
                   </div>
 
                   <div className="command-metric-row bg-[rgba(255,255,255,0.03)] border border-border-glass rounded-lg p-3">
-                    <div className="metric-info flex justify-between items-center w-full font-mono text-[11px] mb-1.5">
-                      <span className="metric-name text-text-main flex items-center gap-1.5 whitespace-nowrap"><i className="fa-solid fa-diagram-project text-accent-amber"></i> Ariba CIG &amp; Z-IDOC Middleware</span>
-                      <span className="metric-val text-accent-amber font-bold whitespace-nowrap ml-2">STABLE (ZARB/ZICP/ZWPO)</span>
+                    <div className="metric-info flex justify-between items-center w-full font-mono text-[10.5px] mb-1.5">
+                      <span className="metric-name text-text-main flex items-center gap-1.5 shrink-0"><i className="fa-solid fa-diagram-project text-accent-amber" /> Ariba CIG &amp; Z-IDOC Middleware</span>
+                      <span className="metric-val text-accent-amber font-bold whitespace-nowrap ml-2 shrink-0">STABLE (ZARB/ZICP/ZWPO)</span>
                     </div>
                     <div className="metric-progress h-1 bg-[rgba(255,255,255,0.08)] rounded overflow-hidden"><div className="metric-fill fill-amber h-full bg-accent-amber rounded" style={{ width: '92%' }}></div></div>
                   </div>
