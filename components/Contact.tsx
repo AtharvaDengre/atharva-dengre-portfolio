@@ -32,10 +32,10 @@ export default function Contact() {
               <div className="font-mono text-[13px] font-semibold text-text-main">atharvadengre@gmail.com</div>
             </div>
 
-            <div className="bg-bg-glass-sub border border-border-glass rounded-xl p-5 text-center backdrop-blur-xl">
+            <div className="bg-bg-glass-sub border border-border-glass rounded-xl p-5 text-center backdrop-blur-xl overflow-hidden">
               <i className="fa-solid fa-location-dot text-xl text-accent-red mb-2 block" />
               <div className="font-mono text-[10.5px] text-text-faint uppercase tracking-wider mb-1">Location Status</div>
-              <div className="font-mono text-[11px] font-semibold text-text-main leading-tight whitespace-nowrap">Pune, India · Open to relocation · EMEA / APAC remote</div>
+              <div className="font-mono text-[10px] font-semibold text-text-main leading-tight whitespace-nowrap">Pune, India · Open to relocation · EMEA / APAC remote</div>
             </div>
           </div>
 
