@@ -197,7 +197,7 @@ export default function Hero() {
                 <i className="fa-solid fa-globe badge-icon text-lg sm:text-xl text-accent-red"></i>
                 <div>
                   <div className="badge-title font-display text-[12px] sm:text-[13px] font-bold text-text-main">Relocation-Ready</div>
-                  <div className="badge-sub font-mono text-[9px] sm:text-[10px] text-text-faint">Dubai · Singapore · Malaysia</div>
+                  <div className="badge-sub font-mono text-[9px] sm:text-[10px] text-text-faint">Dubai · Singapore · Malaysia · EU</div>
                 </div>
               </div>
 
