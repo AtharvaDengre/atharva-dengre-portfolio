@@ -187,11 +187,11 @@ export default function Hero() {
 
           {/* Hero Visual Command Center Card */}
           <div className="hero-visual flex justify-center relative">
-            <div className="glass-command-wrapper relative w-full max-w-[440px]" id="avatarCard" ref={cardRef} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
-              <div className="command-glow-ring absolute -inset-3.5 rounded-3xl bg-gradient-to-br from-accent-red via-accent-purple to-accent-amber blur-2xl opacity-45 z-0 animate-pulse"></div>
+            <div className="glass-command-wrapper relative w-full max-w-[460px] p-[15px]" id="avatarCard" ref={cardRef} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
+              <div className="command-glow-ring absolute inset-0 rounded-3xl bg-gradient-to-br from-accent-red via-accent-purple to-accent-amber blur-2xl opacity-45 z-0 animate-pulse"></div>
               
               {/* Top Floating Badge */}
-              <div className="glass-badge badge-top-right float-anim-1 absolute -top-3.5 -right-3.5 z-30 bg-[rgba(18,9,24,0.92)] border border-[rgba(255,45,75,0.5)] backdrop-blur-xl px-4 py-2.5 rounded-xl flex items-center gap-2.5 shadow-[0_15px_35px_rgba(0,0,0,0.85)]">
+              <div className="glass-badge badge-top-right float-anim-1 absolute -top-5 -right-2 z-30 bg-[rgba(18,9,24,0.95)] border border-[rgba(255,45,75,0.5)] backdrop-blur-2xl px-4 py-2.5 rounded-xl flex items-center gap-2.5 shadow-[0_15px_35px_rgba(0,0,0,0.9)]">
                 <i className="fa-solid fa-globe badge-icon text-xl text-accent-red"></i>
                 <div>
                   <div className="badge-title font-display text-[13px] font-bold text-text-main">Relocation-Ready</div>
@@ -254,7 +254,7 @@ export default function Hero() {
               </div>
 
               {/* Bottom Floating Badge */}
-              <div className="glass-badge badge-bottom-left float-anim-2 absolute -bottom-3.5 -left-3.5 z-30 bg-[rgba(18,9,24,0.92)] border border-[rgba(255,45,75,0.5)] backdrop-blur-xl px-4 py-2.5 rounded-xl flex items-center gap-2.5 shadow-[0_15px_35px_rgba(0,0,0,0.85)]">
+              <div className="glass-badge badge-bottom-left float-anim-2 absolute -bottom-5 -left-2 z-30 bg-[rgba(18,9,24,0.95)] border border-[rgba(255,45,75,0.5)] backdrop-blur-2xl px-4 py-2.5 rounded-xl flex items-center gap-2.5 shadow-[0_15px_35px_rgba(0,0,0,0.9)]">
                 <i className="fa-solid fa-microchip badge-icon alt text-xl text-accent-purple"></i>
                 <div>
                   <div className="badge-title font-display text-[13px] font-bold text-text-main">SAP Joule &amp; watsonx</div>
