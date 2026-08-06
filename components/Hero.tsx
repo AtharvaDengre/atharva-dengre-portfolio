@@ -195,7 +195,7 @@ export default function Hero() {
               <div className="command-glow-ring" />
 
               {/* Floating Top Badge */}
-              <div className="glass-badge badge-top-right float-anim-1">
+              <div className="glass-badge badge-top-right float-anim-1 -top-6 -right-4 z-30">
                 <i className="fa-solid fa-globe text-xl text-accent-red" />
                 <div>
                   <div className="font-display text-[13px] font-bold text-text-main">Relocation-Ready</div>
@@ -204,13 +204,13 @@ export default function Hero() {
               </div>
 
               {/* Central Command Card */}
-              <div className="glass-command-card">
-                <div className="command-card-header">
-                  <div className="command-card-title">
+              <div className="glass-command-card pt-6">
+                <div className="command-card-header flex justify-between items-center pb-4 mb-5 border-b border-border-glass pt-2">
+                  <div className="command-card-title flex items-center gap-2 text-text-main font-bold font-mono text-[11px]">
                     <span className="pulse-dot-green" />
                     <span>SYSTEM_TELEMETRY // ATHARVA.DENGRE</span>
                   </div>
-                  <div className="command-card-tag">S2P &amp; P2P ENGINE</div>
+                  <div className="command-card-tag text-accent-red bg-accent-red/10 px-2 py-0.5 rounded border border-accent-red/25 font-mono text-[10.5px]">S2P &amp; P2P ENGINE</div>
                 </div>
 
                 <div className="monogram-container">
@@ -222,56 +222,56 @@ export default function Hero() {
                   </div>
                 </div>
 
-                <div className="command-metrics-list">
-                  <div className="command-metric-row">
-                    <div className="metric-info">
-                      <span className="metric-name">
+                <div className="command-metrics-list flex flex-col gap-3.5 mb-5">
+                  <div className="command-metric-row bg-white/[0.03] border border-border-glass rounded-lg p-3">
+                    <div className="metric-info flex justify-between items-center w-full mb-1.5 font-mono text-[11.5px]">
+                      <span className="metric-name text-text-main flex items-center gap-1.5">
                         <i className="fa-solid fa-server text-accent-red" /> S2P / P2P S/4HANA Operations
                       </span>
-                      <span className="metric-val text-accent-green">ONLINE (99.8% SLA)</span>
+                      <span className="metric-val text-accent-green font-bold whitespace-nowrap shrink-0 ml-2">ONLINE (99.8% SLA)</span>
                     </div>
-                    <div className="metric-progress">
-                      <div className="metric-fill fill-green" style={{ width: '99.8%' }} />
+                    <div className="metric-progress h-1 bg-white/10 rounded overflow-hidden">
+                      <div className="metric-fill fill-green h-full rounded" style={{ width: '99.8%' }} />
                     </div>
                   </div>
 
-                  <div className="command-metric-row">
-                    <div className="metric-info">
-                      <span className="metric-name">
+                  <div className="command-metric-row bg-white/[0.03] border border-border-glass rounded-lg p-3">
+                    <div className="metric-info flex justify-between items-center w-full mb-1.5 font-mono text-[11.5px]">
+                      <span className="metric-name text-text-main flex items-center gap-1.5">
                         <i className="fa-solid fa-sitemap text-accent-purple" /> MDG Master Data Lifecycle
                       </span>
-                      <span className="metric-val text-accent-purple">ACTIVE (50K+ Txns)</span>
+                      <span className="metric-val text-accent-purple font-bold whitespace-nowrap shrink-0 ml-2">ACTIVE (50K+ Txns)</span>
                     </div>
-                    <div className="metric-progress">
-                      <div className="metric-fill fill-purple" style={{ width: '95%' }} />
+                    <div className="metric-progress h-1 bg-white/10 rounded overflow-hidden">
+                      <div className="metric-fill fill-purple h-full rounded" style={{ width: '95%' }} />
                     </div>
                   </div>
 
-                  <div className="command-metric-row">
-                    <div className="metric-info">
-                      <span className="metric-name">
+                  <div className="command-metric-row bg-white/[0.03] border border-border-glass rounded-lg p-3">
+                    <div className="metric-info flex justify-between items-center w-full mb-1.5 font-mono text-[11.5px]">
+                      <span className="metric-name text-text-main flex items-center gap-1.5">
                         <i className="fa-solid fa-diagram-project text-accent-amber" /> Ariba CIG &amp; Z-IDOC Middleware
                       </span>
-                      <span className="metric-val text-accent-amber">STABLE (ZARB/ZICP/ZWPO)</span>
+                      <span className="metric-val text-accent-amber font-bold whitespace-nowrap shrink-0 ml-2">STABLE (ZARB/ZICP/ZWPO)</span>
                     </div>
-                    <div className="metric-progress">
-                      <div className="metric-fill fill-amber" style={{ width: '92%' }} />
+                    <div className="metric-progress h-1 bg-white/10 rounded overflow-hidden">
+                      <div className="metric-fill fill-amber h-full rounded" style={{ width: '92%' }} />
                     </div>
                   </div>
                 </div>
 
-                <div className="command-card-footer">
-                  <div className="footer-badge">
+                <div className="command-card-footer flex justify-between gap-2.5 pt-3.5 border-t border-border-glass">
+                  <div className="footer-badge font-mono text-[11px] text-text-muted bg-white/[0.04] py-1.5 px-3 rounded border border-border-glass flex items-center justify-center gap-1.5 flex-1">
                     <i className="fa-solid fa-certificate" /> 3x SAP Certified
                   </div>
-                  <div className="footer-badge">
+                  <div className="footer-badge font-mono text-[11px] text-text-muted bg-white/[0.04] py-1.5 px-3 rounded border border-border-glass flex items-center justify-center gap-1.5 flex-1">
                     <i className="fa-solid fa-shield-halved" /> IBM Gold-Tier
                   </div>
                 </div>
               </div>
 
               {/* Floating Bottom Badge */}
-              <div className="glass-badge badge-bottom-left float-anim-2">
+              <div className="glass-badge badge-bottom-left float-anim-2 -bottom-5 -left-4 z-30">
                 <i className="fa-solid fa-microchip text-xl text-accent-purple" />
                 <div>
                   <div className="font-display text-[13px] font-bold text-text-main">SAP Joule &amp; watsonx</div>
